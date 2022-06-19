@@ -11,6 +11,8 @@
 # hlsearch on (H) or off (h):
 ~h
 # Command Line History (newest to oldest):
+:wq
+|2,0,1655629170,,"wq"
 :q
 |2,0,1655629079,,"q"
 :w
@@ -33,8 +35,6 @@
 |2,0,1655627957,,"!rm ~/.viminfo"
 :source ~/.vimrc
 |2,0,1655627950,,"source ~/.vimrc"
-:wq
-|2,0,1655627846,,"wq"
 :help viminfo
 |2,0,1655627844,,"help viminfo"
 
@@ -61,20 +61,20 @@
 |3,0,36,0,1,0,1655629064,"3"
 
 # File marks:
-'0  2  0  ~/MotionlessWobblyDatalog/README.md
-|4,48,2,0,1655629079,"~/MotionlessWobblyDatalog/README.md"
-'1  1  0  ~/MotionlessWobblyDatalog/__LSP_SETTINGS__
-|4,49,1,0,1655628483,"~/MotionlessWobblyDatalog/__LSP_SETTINGS__"
+'0  3  11  ~/MotionlessWobblyDatalog/.gitignore
+|4,48,3,11,1655629170,"~/MotionlessWobblyDatalog/.gitignore"
+'1  2  0  ~/MotionlessWobblyDatalog/README.md
+|4,49,2,0,1655629079,"~/MotionlessWobblyDatalog/README.md"
 '2  1  0  ~/MotionlessWobblyDatalog/__LSP_SETTINGS__
-|4,50,1,0,1655628461,"~/MotionlessWobblyDatalog/__LSP_SETTINGS__"
-'3  1  0  ~/MotionlessWobblyDatalog/dotfiles/.vimrc
-|4,51,1,0,1655628317,"~/MotionlessWobblyDatalog/dotfiles/.vimrc"
+|4,50,1,0,1655628483,"~/MotionlessWobblyDatalog/__LSP_SETTINGS__"
+'3  1  0  ~/MotionlessWobblyDatalog/__LSP_SETTINGS__
+|4,51,1,0,1655628461,"~/MotionlessWobblyDatalog/__LSP_SETTINGS__"
 '4  1  0  ~/MotionlessWobblyDatalog/dotfiles/.vimrc
 |4,52,1,0,1655628317,"~/MotionlessWobblyDatalog/dotfiles/.vimrc"
-'5  1  0  ~/MotionlessWobblyDatalog/dotfiles/minimal.vimrc
-|4,53,1,0,1655628191,"~/MotionlessWobblyDatalog/dotfiles/minimal.vimrc"
-'6  1  0  ~/MotionlessWobblyDatalog/dotfiles/.vimrc
-|4,54,1,0,1655627848,"~/MotionlessWobblyDatalog/dotfiles/.vimrc"
+'5  1  0  ~/MotionlessWobblyDatalog/dotfiles/.vimrc
+|4,53,1,0,1655628317,"~/MotionlessWobblyDatalog/dotfiles/.vimrc"
+'6  1  0  ~/MotionlessWobblyDatalog/dotfiles/minimal.vimrc
+|4,54,1,0,1655628191,"~/MotionlessWobblyDatalog/dotfiles/minimal.vimrc"
 '7  1  0  ~/MotionlessWobblyDatalog/dotfiles/.vimrc
 |4,55,1,0,1655627848,"~/MotionlessWobblyDatalog/dotfiles/.vimrc"
 '8  1  0  ~/MotionlessWobblyDatalog/dotfiles/.vimrc
@@ -83,20 +83,42 @@
 |4,57,1,0,1655627848,"~/MotionlessWobblyDatalog/dotfiles/.vimrc"
 
 # Jumplist (newest first):
+-'  3  11  ~/MotionlessWobblyDatalog/.gitignore
+|4,39,3,11,1655629170,"~/MotionlessWobblyDatalog/.gitignore"
+-'  1  0  ~/MotionlessWobblyDatalog/.gitignore
+|4,39,1,0,1655629134,"~/MotionlessWobblyDatalog/.gitignore"
+-'  2  0  ~/MotionlessWobblyDatalog/README.md
+|4,39,2,0,1655629079,"~/MotionlessWobblyDatalog/README.md"
 -'  2  0  ~/MotionlessWobblyDatalog/README.md
 |4,39,2,0,1655629079,"~/MotionlessWobblyDatalog/README.md"
 -'  3  0  ~/MotionlessWobblyDatalog/README.md
 |4,39,3,0,1655629071,"~/MotionlessWobblyDatalog/README.md"
+-'  3  0  ~/MotionlessWobblyDatalog/README.md
+|4,39,3,0,1655629071,"~/MotionlessWobblyDatalog/README.md"
+-'  1  0  ~/MotionlessWobblyDatalog/README.md
+|4,39,1,0,1655629060,"~/MotionlessWobblyDatalog/README.md"
 -'  1  0  ~/MotionlessWobblyDatalog/README.md
 |4,39,1,0,1655629060,"~/MotionlessWobblyDatalog/README.md"
 -'  1  0  ~/MotionlessWobblyDatalog/__LSP_SETTINGS__
 |4,39,1,0,1655628483,"~/MotionlessWobblyDatalog/__LSP_SETTINGS__"
 -'  1  0  ~/MotionlessWobblyDatalog/__LSP_SETTINGS__
 |4,39,1,0,1655628483,"~/MotionlessWobblyDatalog/__LSP_SETTINGS__"
+-'  1  0  ~/MotionlessWobblyDatalog/__LSP_SETTINGS__
+|4,39,1,0,1655628483,"~/MotionlessWobblyDatalog/__LSP_SETTINGS__"
+-'  1  0  ~/MotionlessWobblyDatalog/__LSP_SETTINGS__
+|4,39,1,0,1655628483,"~/MotionlessWobblyDatalog/__LSP_SETTINGS__"
 -'  1  0  ~/MotionlessWobblyDatalog/dotfiles/.vimrc
 |4,39,1,0,1655628476,"~/MotionlessWobblyDatalog/dotfiles/.vimrc"
 -'  1  0  ~/MotionlessWobblyDatalog/dotfiles/.vimrc
 |4,39,1,0,1655628476,"~/MotionlessWobblyDatalog/dotfiles/.vimrc"
+-'  1  0  ~/MotionlessWobblyDatalog/dotfiles/.vimrc
+|4,39,1,0,1655628476,"~/MotionlessWobblyDatalog/dotfiles/.vimrc"
+-'  1  0  ~/MotionlessWobblyDatalog/dotfiles/.vimrc
+|4,39,1,0,1655628476,"~/MotionlessWobblyDatalog/dotfiles/.vimrc"
+-'  1  0  ~/MotionlessWobblyDatalog/__LSP_SETTINGS__
+|4,39,1,0,1655628461,"~/MotionlessWobblyDatalog/__LSP_SETTINGS__"
+-'  1  0  ~/MotionlessWobblyDatalog/__LSP_SETTINGS__
+|4,39,1,0,1655628461,"~/MotionlessWobblyDatalog/__LSP_SETTINGS__"
 -'  1  0  ~/MotionlessWobblyDatalog/__LSP_SETTINGS__
 |4,39,1,0,1655628461,"~/MotionlessWobblyDatalog/__LSP_SETTINGS__"
 -'  1  0  ~/MotionlessWobblyDatalog/__LSP_SETTINGS__
@@ -109,6 +131,22 @@
 |4,39,1,0,1655628431,"~/MotionlessWobblyDatalog/a.hs"
 -'  1  0  ~/MotionlessWobblyDatalog/a.hs
 |4,39,1,0,1655628431,"~/MotionlessWobblyDatalog/a.hs"
+-'  1  0  ~/MotionlessWobblyDatalog/a.hs
+|4,39,1,0,1655628431,"~/MotionlessWobblyDatalog/a.hs"
+-'  1  0  ~/MotionlessWobblyDatalog/a.hs
+|4,39,1,0,1655628431,"~/MotionlessWobblyDatalog/a.hs"
+-'  1  0  ~/MotionlessWobblyDatalog/a.hs
+|4,39,1,0,1655628431,"~/MotionlessWobblyDatalog/a.hs"
+-'  1  0  ~/MotionlessWobblyDatalog/a.hs
+|4,39,1,0,1655628431,"~/MotionlessWobblyDatalog/a.hs"
+-'  1  0  ~/MotionlessWobblyDatalog/dotfiles/.vimrc
+|4,39,1,0,1655628317,"~/MotionlessWobblyDatalog/dotfiles/.vimrc"
+-'  1  0  ~/MotionlessWobblyDatalog/dotfiles/.vimrc
+|4,39,1,0,1655628317,"~/MotionlessWobblyDatalog/dotfiles/.vimrc"
+-'  1  0  ~/MotionlessWobblyDatalog/dotfiles/.vimrc
+|4,39,1,0,1655628317,"~/MotionlessWobblyDatalog/dotfiles/.vimrc"
+-'  1  0  ~/MotionlessWobblyDatalog/dotfiles/.vimrc
+|4,39,1,0,1655628317,"~/MotionlessWobblyDatalog/dotfiles/.vimrc"
 -'  1  0  ~/MotionlessWobblyDatalog/dotfiles/.vimrc
 |4,39,1,0,1655628317,"~/MotionlessWobblyDatalog/dotfiles/.vimrc"
 -'  1  0  ~/MotionlessWobblyDatalog/dotfiles/.vimrc
@@ -149,6 +187,38 @@
 |4,39,1,0,1655628191,"~/MotionlessWobblyDatalog/dotfiles/minimal.vimrc"
 -'  1  0  ~/MotionlessWobblyDatalog/dotfiles/minimal.vimrc
 |4,39,1,0,1655628191,"~/MotionlessWobblyDatalog/dotfiles/minimal.vimrc"
+-'  1  0  ~/MotionlessWobblyDatalog/dotfiles/minimal.vimrc
+|4,39,1,0,1655628191,"~/MotionlessWobblyDatalog/dotfiles/minimal.vimrc"
+-'  1  0  ~/MotionlessWobblyDatalog/dotfiles/minimal.vimrc
+|4,39,1,0,1655628191,"~/MotionlessWobblyDatalog/dotfiles/minimal.vimrc"
+-'  1  0  ~/MotionlessWobblyDatalog/dotfiles/minimal.vimrc
+|4,39,1,0,1655628191,"~/MotionlessWobblyDatalog/dotfiles/minimal.vimrc"
+-'  1  0  ~/MotionlessWobblyDatalog/dotfiles/minimal.vimrc
+|4,39,1,0,1655628191,"~/MotionlessWobblyDatalog/dotfiles/minimal.vimrc"
+-'  1  0  ~/MotionlessWobblyDatalog/dotfiles/minimal.vimrc
+|4,39,1,0,1655628191,"~/MotionlessWobblyDatalog/dotfiles/minimal.vimrc"
+-'  1  0  ~/MotionlessWobblyDatalog/dotfiles/minimal.vimrc
+|4,39,1,0,1655628191,"~/MotionlessWobblyDatalog/dotfiles/minimal.vimrc"
+-'  1  0  ~/MotionlessWobblyDatalog/dotfiles/minimal.vimrc
+|4,39,1,0,1655628191,"~/MotionlessWobblyDatalog/dotfiles/minimal.vimrc"
+-'  1  0  ~/MotionlessWobblyDatalog/dotfiles/minimal.vimrc
+|4,39,1,0,1655628191,"~/MotionlessWobblyDatalog/dotfiles/minimal.vimrc"
+-'  1  0  ~/MotionlessWobblyDatalog/dotfiles/minimal.vimrc
+|4,39,1,0,1655628191,"~/MotionlessWobblyDatalog/dotfiles/minimal.vimrc"
+-'  1  0  ~/MotionlessWobblyDatalog/dotfiles/minimal.vimrc
+|4,39,1,0,1655628191,"~/MotionlessWobblyDatalog/dotfiles/minimal.vimrc"
+-'  1  0  ~/MotionlessWobblyDatalog/dotfiles/minimal.vimrc
+|4,39,1,0,1655628191,"~/MotionlessWobblyDatalog/dotfiles/minimal.vimrc"
+-'  1  0  ~/MotionlessWobblyDatalog/dotfiles/minimal.vimrc
+|4,39,1,0,1655628191,"~/MotionlessWobblyDatalog/dotfiles/minimal.vimrc"
+-'  1  0  ~/MotionlessWobblyDatalog/dotfiles/minimal.vimrc
+|4,39,1,0,1655628191,"~/MotionlessWobblyDatalog/dotfiles/minimal.vimrc"
+-'  1  0  ~/MotionlessWobblyDatalog/dotfiles/minimal.vimrc
+|4,39,1,0,1655628191,"~/MotionlessWobblyDatalog/dotfiles/minimal.vimrc"
+-'  1  0  ~/MotionlessWobblyDatalog/dotfiles/minimal.vimrc
+|4,39,1,0,1655628191,"~/MotionlessWobblyDatalog/dotfiles/minimal.vimrc"
+-'  1  0  ~/MotionlessWobblyDatalog/dotfiles/minimal.vimrc
+|4,39,1,0,1655628191,"~/MotionlessWobblyDatalog/dotfiles/minimal.vimrc"
 -'  1  0  ~/MotionlessWobblyDatalog/main.sh
 |4,39,1,0,1655628021,"~/MotionlessWobblyDatalog/main.sh"
 -'  1  0  ~/MotionlessWobblyDatalog/main.sh
@@ -213,78 +283,15 @@
 |4,39,1,0,1655628021,"~/MotionlessWobblyDatalog/main.sh"
 -'  1  0  ~/MotionlessWobblyDatalog/main.sh
 |4,39,1,0,1655628021,"~/MotionlessWobblyDatalog/main.sh"
--'  23  0  ~/MotionlessWobblyDatalog/dotfiles/minimal.vimrc
-|4,39,23,0,1655628011,"~/MotionlessWobblyDatalog/dotfiles/minimal.vimrc"
--'  23  0  ~/MotionlessWobblyDatalog/dotfiles/minimal.vimrc
-|4,39,23,0,1655628011,"~/MotionlessWobblyDatalog/dotfiles/minimal.vimrc"
--'  23  0  ~/MotionlessWobblyDatalog/dotfiles/minimal.vimrc
-|4,39,23,0,1655628011,"~/MotionlessWobblyDatalog/dotfiles/minimal.vimrc"
--'  23  0  ~/MotionlessWobblyDatalog/dotfiles/minimal.vimrc
-|4,39,23,0,1655628011,"~/MotionlessWobblyDatalog/dotfiles/minimal.vimrc"
--'  23  0  ~/MotionlessWobblyDatalog/dotfiles/minimal.vimrc
-|4,39,23,0,1655628011,"~/MotionlessWobblyDatalog/dotfiles/minimal.vimrc"
--'  23  0  ~/MotionlessWobblyDatalog/dotfiles/minimal.vimrc
-|4,39,23,0,1655628011,"~/MotionlessWobblyDatalog/dotfiles/minimal.vimrc"
--'  23  0  ~/MotionlessWobblyDatalog/dotfiles/minimal.vimrc
-|4,39,23,0,1655628011,"~/MotionlessWobblyDatalog/dotfiles/minimal.vimrc"
--'  23  0  ~/MotionlessWobblyDatalog/dotfiles/minimal.vimrc
-|4,39,23,0,1655628011,"~/MotionlessWobblyDatalog/dotfiles/minimal.vimrc"
--'  23  0  ~/MotionlessWobblyDatalog/dotfiles/minimal.vimrc
-|4,39,23,0,1655628011,"~/MotionlessWobblyDatalog/dotfiles/minimal.vimrc"
--'  23  0  ~/MotionlessWobblyDatalog/dotfiles/minimal.vimrc
-|4,39,23,0,1655628011,"~/MotionlessWobblyDatalog/dotfiles/minimal.vimrc"
--'  23  0  ~/MotionlessWobblyDatalog/dotfiles/minimal.vimrc
-|4,39,23,0,1655628011,"~/MotionlessWobblyDatalog/dotfiles/minimal.vimrc"
--'  23  0  ~/MotionlessWobblyDatalog/dotfiles/minimal.vimrc
-|4,39,23,0,1655628011,"~/MotionlessWobblyDatalog/dotfiles/minimal.vimrc"
--'  23  0  ~/MotionlessWobblyDatalog/dotfiles/minimal.vimrc
-|4,39,23,0,1655628011,"~/MotionlessWobblyDatalog/dotfiles/minimal.vimrc"
--'  23  0  ~/MotionlessWobblyDatalog/dotfiles/minimal.vimrc
-|4,39,23,0,1655628011,"~/MotionlessWobblyDatalog/dotfiles/minimal.vimrc"
--'  23  0  ~/MotionlessWobblyDatalog/dotfiles/minimal.vimrc
-|4,39,23,0,1655628011,"~/MotionlessWobblyDatalog/dotfiles/minimal.vimrc"
--'  23  0  ~/MotionlessWobblyDatalog/dotfiles/minimal.vimrc
-|4,39,23,0,1655628011,"~/MotionlessWobblyDatalog/dotfiles/minimal.vimrc"
--'  23  0  ~/MotionlessWobblyDatalog/dotfiles/minimal.vimrc
-|4,39,23,0,1655628011,"~/MotionlessWobblyDatalog/dotfiles/minimal.vimrc"
--'  23  0  ~/MotionlessWobblyDatalog/dotfiles/minimal.vimrc
-|4,39,23,0,1655628011,"~/MotionlessWobblyDatalog/dotfiles/minimal.vimrc"
--'  23  0  ~/MotionlessWobblyDatalog/dotfiles/minimal.vimrc
-|4,39,23,0,1655628011,"~/MotionlessWobblyDatalog/dotfiles/minimal.vimrc"
--'  23  0  ~/MotionlessWobblyDatalog/dotfiles/minimal.vimrc
-|4,39,23,0,1655628011,"~/MotionlessWobblyDatalog/dotfiles/minimal.vimrc"
--'  23  0  ~/MotionlessWobblyDatalog/dotfiles/minimal.vimrc
-|4,39,23,0,1655628011,"~/MotionlessWobblyDatalog/dotfiles/minimal.vimrc"
--'  23  0  ~/MotionlessWobblyDatalog/dotfiles/minimal.vimrc
-|4,39,23,0,1655628011,"~/MotionlessWobblyDatalog/dotfiles/minimal.vimrc"
--'  23  0  ~/MotionlessWobblyDatalog/dotfiles/minimal.vimrc
-|4,39,23,0,1655628011,"~/MotionlessWobblyDatalog/dotfiles/minimal.vimrc"
--'  23  0  ~/MotionlessWobblyDatalog/dotfiles/minimal.vimrc
-|4,39,23,0,1655628011,"~/MotionlessWobblyDatalog/dotfiles/minimal.vimrc"
--'  23  0  ~/MotionlessWobblyDatalog/dotfiles/minimal.vimrc
-|4,39,23,0,1655628011,"~/MotionlessWobblyDatalog/dotfiles/minimal.vimrc"
--'  23  0  ~/MotionlessWobblyDatalog/dotfiles/minimal.vimrc
-|4,39,23,0,1655628011,"~/MotionlessWobblyDatalog/dotfiles/minimal.vimrc"
--'  23  0  ~/MotionlessWobblyDatalog/dotfiles/minimal.vimrc
-|4,39,23,0,1655628011,"~/MotionlessWobblyDatalog/dotfiles/minimal.vimrc"
--'  23  0  ~/MotionlessWobblyDatalog/dotfiles/minimal.vimrc
-|4,39,23,0,1655628011,"~/MotionlessWobblyDatalog/dotfiles/minimal.vimrc"
--'  23  0  ~/MotionlessWobblyDatalog/dotfiles/minimal.vimrc
-|4,39,23,0,1655628011,"~/MotionlessWobblyDatalog/dotfiles/minimal.vimrc"
--'  23  0  ~/MotionlessWobblyDatalog/dotfiles/minimal.vimrc
-|4,39,23,0,1655628011,"~/MotionlessWobblyDatalog/dotfiles/minimal.vimrc"
--'  23  0  ~/MotionlessWobblyDatalog/dotfiles/minimal.vimrc
-|4,39,23,0,1655628011,"~/MotionlessWobblyDatalog/dotfiles/minimal.vimrc"
--'  23  0  ~/MotionlessWobblyDatalog/dotfiles/minimal.vimrc
-|4,39,23,0,1655628011,"~/MotionlessWobblyDatalog/dotfiles/minimal.vimrc"
--'  1  0  ~/MotionlessWobblyDatalog/dotfiles/.vimrc
-|4,39,1,0,1655627907,"~/MotionlessWobblyDatalog/dotfiles/.vimrc"
--'  1  0  ~/MotionlessWobblyDatalog/dotfiles/.vimrc
-|4,39,1,0,1655627907,"~/MotionlessWobblyDatalog/dotfiles/.vimrc"
--'  1  0  ~/MotionlessWobblyDatalog/dotfiles/.vimrc
-|4,39,1,0,1655627907,"~/MotionlessWobblyDatalog/dotfiles/.vimrc"
 
 # History of marks within files (newest to oldest):
+
+> ~/MotionlessWobblyDatalog/.gitignore
+	*	1655629169	0
+	"	3	11
+	^	3	12
+	.	3	11
+	+	3	11
 
 > ~/MotionlessWobblyDatalog/README.md
 	*	1655629078	0
