@@ -9,5 +9,6 @@
       pkgs.ghc
       pkgs.cabal-install
       pkgs.haskell-language-server
+      pkgs.tmux
     ];
 }
