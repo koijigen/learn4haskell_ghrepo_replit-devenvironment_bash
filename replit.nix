@@ -5,5 +5,9 @@
         pkgs.wget
         pkgs.w3m
         pkgs.vim
+        pkgs.nodejs
+      pkgs.ghc
+      pkgs.cabal-install
+      pkgs.haskell-language-server
     ];
 }
