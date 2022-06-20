@@ -10,13 +10,25 @@
 
 # hlsearch on (H) or off (h):
 ~h
+# Last Substitute Search Pattern:
+~MSle0~&.bashrc
+
+# Last Substitute String:
+$.bash_history
+
 # Command Line History (newest to oldest):
+:q!
+|2,0,1655636761,,"q!"
 :wq
-|2,0,1655629170,,"wq"
-:q
-|2,0,1655629079,,"q"
+|2,0,1655636469,,"wq"
 :w
-|2,0,1655629074,,"w"
+|2,0,1655636210,,"w"
+:s/.bashrc/.bash_history/g
+|2,0,1655635770,,"s/.bashrc/.bash_history/g"
+:q
+|2,0,1655631836,,"q"
+:w restore
+|2,0,1655631681,,"w restore"
 :LspManageServers
 |2,0,1655628476,,"LspManageServers"
 :LspInstallServer
@@ -39,6 +51,8 @@
 |2,0,1655627844,,"help viminfo"
 
 # Search String History (newest to oldest):
+? .bashrc
+|2,1,1655635770,,".bashrc"
 
 # Expression History (newest to oldest):
 
@@ -47,244 +61,319 @@
 # Debug Line History (newest to oldest):
 
 # Registers:
-""1	LINE	0
-	3. `. restore.sh`
-|3,1,1,1,1,0,1655629073,"3. `. restore.sh`"
-"2	LINE	0
-	2. `ctrl + shift + s`(open shell).
-|3,0,2,1,1,0,1655629063,"2. `ctrl + shift + s`(open shell)."
-"3	LINE	0
+""0	LINE	0
+	cp /home/runner/MotionlessWobblyDatalog/dotfiles/.bashrc ~/.bashrc
+|3,1,0,1,1,0,1655635748,"cp /home/runner/MotionlessWobblyDatalog/dotfiles/.bashrc ~/.bashrc"
+"1	LINE	0
 	
-|3,0,3,1,1,0,1655627922,""
+|3,0,1,1,1,0,1655631672,""
+"2	LINE	0
+	pwd
+|3,0,2,1,1,0,1655631671,"pwd"
+"3	LINE	0
+	touch test
+|3,0,3,1,1,0,1655631279,"touch test"
+"4	LINE	0
+	echo "restored."
+|3,0,4,1,1,0,1655630892,"echo \"restored.\""
+"5	LINE	0
+	3. `. restore.sh`
+|3,0,5,1,1,0,1655629073,"3. `. restore.sh`"
+"6	LINE	0
+	2. `ctrl + shift + s`(open shell).
+|3,0,6,1,1,0,1655629063,"2. `ctrl + shift + s`(open shell)."
+"7	LINE	0
+	
+|3,0,7,1,1,0,1655627922,""
 "-	CHAR	0
-	3
-|3,0,36,0,1,0,1655629064,"3"
+	echo "hello"'
+|3,0,36,0,1,0,1655630897,"echo \"hello\"'"
 
 # File marks:
-'0  3  11  ~/MotionlessWobblyDatalog/.gitignore
-|4,48,3,11,1655629170,"~/MotionlessWobblyDatalog/.gitignore"
-'1  2  0  ~/MotionlessWobblyDatalog/README.md
-|4,49,2,0,1655629079,"~/MotionlessWobblyDatalog/README.md"
-'2  1  0  ~/MotionlessWobblyDatalog/__LSP_SETTINGS__
-|4,50,1,0,1655628483,"~/MotionlessWobblyDatalog/__LSP_SETTINGS__"
-'3  1  0  ~/MotionlessWobblyDatalog/__LSP_SETTINGS__
-|4,51,1,0,1655628461,"~/MotionlessWobblyDatalog/__LSP_SETTINGS__"
-'4  1  0  ~/MotionlessWobblyDatalog/dotfiles/.vimrc
-|4,52,1,0,1655628317,"~/MotionlessWobblyDatalog/dotfiles/.vimrc"
-'5  1  0  ~/MotionlessWobblyDatalog/dotfiles/.vimrc
-|4,53,1,0,1655628317,"~/MotionlessWobblyDatalog/dotfiles/.vimrc"
-'6  1  0  ~/MotionlessWobblyDatalog/dotfiles/minimal.vimrc
-|4,54,1,0,1655628191,"~/MotionlessWobblyDatalog/dotfiles/minimal.vimrc"
-'7  1  0  ~/MotionlessWobblyDatalog/dotfiles/.vimrc
-|4,55,1,0,1655627848,"~/MotionlessWobblyDatalog/dotfiles/.vimrc"
-'8  1  0  ~/MotionlessWobblyDatalog/dotfiles/.vimrc
-|4,56,1,0,1655627848,"~/MotionlessWobblyDatalog/dotfiles/.vimrc"
-'9  1  0  ~/MotionlessWobblyDatalog/dotfiles/.vimrc
-|4,57,1,0,1655627848,"~/MotionlessWobblyDatalog/dotfiles/.vimrc"
+'0  8  0  ~/.bash_logout
+|4,48,8,0,1655636761,"~/.bash_logout"
+'1  4  12  ~/MotionlessWobblyDatalog/main.sh
+|4,49,4,12,1655636469,"~/MotionlessWobblyDatalog/main.sh"
+'2  132  35  ~/MotionlessWobblyDatalog/dotfiles/.bashrc
+|4,50,132,35,1655636270,"~/MotionlessWobblyDatalog/dotfiles/.bashrc"
+'3  133  0  ~/MotionlessWobblyDatalog/dotfiles/.bashrc
+|4,51,133,0,1655636224,"~/MotionlessWobblyDatalog/dotfiles/.bashrc"
+'4  133  0  ~/MotionlessWobblyDatalog/dotfiles/.bashrc
+|4,52,133,0,1655636224,"~/MotionlessWobblyDatalog/dotfiles/.bashrc"
+'5  3  0  ~/MotionlessWobblyDatalog/restore
+|4,53,3,0,1655635775,"~/MotionlessWobblyDatalog/restore"
+'6  1  0  ~/MotionlessWobblyDatalog/README.md
+|4,54,1,0,1655631836,"~/MotionlessWobblyDatalog/README.md"
+'7  2  27  ~/MotionlessWobblyDatalog/.replit
+|4,55,2,27,1655631829,"~/MotionlessWobblyDatalog/.replit"
+'8  1  0  ~/MotionlessWobblyDatalog/replit.sh
+|4,56,1,0,1655631807,"~/MotionlessWobblyDatalog/replit.sh"
+'9  3  0  ~/MotionlessWobblyDatalog/restore.sh
+|4,57,3,0,1655631687,"~/MotionlessWobblyDatalog/restore.sh"
 
 # Jumplist (newest first):
--'  3  11  ~/MotionlessWobblyDatalog/.gitignore
-|4,39,3,11,1655629170,"~/MotionlessWobblyDatalog/.gitignore"
--'  1  0  ~/MotionlessWobblyDatalog/.gitignore
-|4,39,1,0,1655629134,"~/MotionlessWobblyDatalog/.gitignore"
--'  2  0  ~/MotionlessWobblyDatalog/README.md
-|4,39,2,0,1655629079,"~/MotionlessWobblyDatalog/README.md"
--'  2  0  ~/MotionlessWobblyDatalog/README.md
-|4,39,2,0,1655629079,"~/MotionlessWobblyDatalog/README.md"
--'  3  0  ~/MotionlessWobblyDatalog/README.md
-|4,39,3,0,1655629071,"~/MotionlessWobblyDatalog/README.md"
--'  3  0  ~/MotionlessWobblyDatalog/README.md
-|4,39,3,0,1655629071,"~/MotionlessWobblyDatalog/README.md"
+-'  8  0  ~/.bash_logout
+|4,39,8,0,1655636761,"~/.bash_logout"
+-'  1  0  ~/.bash_logout
+|4,39,1,0,1655636698,"~/.bash_logout"
+-'  4  12  ~/MotionlessWobblyDatalog/main.sh
+|4,39,4,12,1655636469,"~/MotionlessWobblyDatalog/main.sh"
+-'  4  12  ~/MotionlessWobblyDatalog/main.sh
+|4,39,4,12,1655636469,"~/MotionlessWobblyDatalog/main.sh"
+-'  1  0  ~/MotionlessWobblyDatalog/main.sh
+|4,39,1,0,1655636458,"~/MotionlessWobblyDatalog/main.sh"
+-'  1  0  ~/MotionlessWobblyDatalog/main.sh
+|4,39,1,0,1655636458,"~/MotionlessWobblyDatalog/main.sh"
+-'  132  35  ~/MotionlessWobblyDatalog/dotfiles/.bashrc
+|4,39,132,35,1655636270,"~/MotionlessWobblyDatalog/dotfiles/.bashrc"
+-'  132  35  ~/MotionlessWobblyDatalog/dotfiles/.bashrc
+|4,39,132,35,1655636270,"~/MotionlessWobblyDatalog/dotfiles/.bashrc"
+-'  132  35  ~/MotionlessWobblyDatalog/dotfiles/.bashrc
+|4,39,132,35,1655636270,"~/MotionlessWobblyDatalog/dotfiles/.bashrc"
+-'  132  35  ~/MotionlessWobblyDatalog/dotfiles/.bashrc
+|4,39,132,35,1655636270,"~/MotionlessWobblyDatalog/dotfiles/.bashrc"
+-'  1  0  ~/MotionlessWobblyDatalog/dotfiles/.bashrc
+|4,39,1,0,1655636249,"~/MotionlessWobblyDatalog/dotfiles/.bashrc"
+-'  1  0  ~/MotionlessWobblyDatalog/dotfiles/.bashrc
+|4,39,1,0,1655636249,"~/MotionlessWobblyDatalog/dotfiles/.bashrc"
+-'  1  0  ~/MotionlessWobblyDatalog/dotfiles/.bashrc
+|4,39,1,0,1655636249,"~/MotionlessWobblyDatalog/dotfiles/.bashrc"
+-'  1  0  ~/MotionlessWobblyDatalog/dotfiles/.bashrc
+|4,39,1,0,1655636249,"~/MotionlessWobblyDatalog/dotfiles/.bashrc"
+-'  133  0  ~/MotionlessWobblyDatalog/dotfiles/.bashrc
+|4,39,133,0,1655636224,"~/MotionlessWobblyDatalog/dotfiles/.bashrc"
+-'  133  0  ~/MotionlessWobblyDatalog/dotfiles/.bashrc
+|4,39,133,0,1655636224,"~/MotionlessWobblyDatalog/dotfiles/.bashrc"
+-'  133  0  ~/MotionlessWobblyDatalog/dotfiles/.bashrc
+|4,39,133,0,1655636224,"~/MotionlessWobblyDatalog/dotfiles/.bashrc"
+-'  133  0  ~/MotionlessWobblyDatalog/dotfiles/.bashrc
+|4,39,133,0,1655636224,"~/MotionlessWobblyDatalog/dotfiles/.bashrc"
+-'  133  0  ~/MotionlessWobblyDatalog/dotfiles/.bashrc
+|4,39,133,0,1655636224,"~/MotionlessWobblyDatalog/dotfiles/.bashrc"
+-'  133  0  ~/MotionlessWobblyDatalog/dotfiles/.bashrc
+|4,39,133,0,1655636224,"~/MotionlessWobblyDatalog/dotfiles/.bashrc"
+-'  133  0  ~/MotionlessWobblyDatalog/dotfiles/.bashrc
+|4,39,133,0,1655636224,"~/MotionlessWobblyDatalog/dotfiles/.bashrc"
+-'  133  0  ~/MotionlessWobblyDatalog/dotfiles/.bashrc
+|4,39,133,0,1655636224,"~/MotionlessWobblyDatalog/dotfiles/.bashrc"
+-'  1  0  ~/MotionlessWobblyDatalog/dotfiles/.bashrc
+|4,39,1,0,1655636019,"~/MotionlessWobblyDatalog/dotfiles/.bashrc"
+-'  1  0  ~/MotionlessWobblyDatalog/dotfiles/.bashrc
+|4,39,1,0,1655636019,"~/MotionlessWobblyDatalog/dotfiles/.bashrc"
+-'  1  0  ~/MotionlessWobblyDatalog/dotfiles/.bashrc
+|4,39,1,0,1655636019,"~/MotionlessWobblyDatalog/dotfiles/.bashrc"
+-'  1  0  ~/MotionlessWobblyDatalog/dotfiles/.bashrc
+|4,39,1,0,1655636019,"~/MotionlessWobblyDatalog/dotfiles/.bashrc"
+-'  3  0  ~/MotionlessWobblyDatalog/restore
+|4,39,3,0,1655635775,"~/MotionlessWobblyDatalog/restore"
+-'  3  0  ~/MotionlessWobblyDatalog/restore
+|4,39,3,0,1655635775,"~/MotionlessWobblyDatalog/restore"
+-'  3  0  ~/MotionlessWobblyDatalog/restore
+|4,39,3,0,1655635775,"~/MotionlessWobblyDatalog/restore"
+-'  3  0  ~/MotionlessWobblyDatalog/restore
+|4,39,3,0,1655635775,"~/MotionlessWobblyDatalog/restore"
+-'  3  0  ~/MotionlessWobblyDatalog/restore
+|4,39,3,0,1655635775,"~/MotionlessWobblyDatalog/restore"
+-'  3  0  ~/MotionlessWobblyDatalog/restore
+|4,39,3,0,1655635775,"~/MotionlessWobblyDatalog/restore"
+-'  3  0  ~/MotionlessWobblyDatalog/restore
+|4,39,3,0,1655635775,"~/MotionlessWobblyDatalog/restore"
+-'  3  0  ~/MotionlessWobblyDatalog/restore
+|4,39,3,0,1655635775,"~/MotionlessWobblyDatalog/restore"
+-'  3  0  ~/MotionlessWobblyDatalog/restore
+|4,39,3,0,1655635775,"~/MotionlessWobblyDatalog/restore"
+-'  3  0  ~/MotionlessWobblyDatalog/restore
+|4,39,3,0,1655635775,"~/MotionlessWobblyDatalog/restore"
+-'  3  0  ~/MotionlessWobblyDatalog/restore
+|4,39,3,0,1655635775,"~/MotionlessWobblyDatalog/restore"
+-'  3  0  ~/MotionlessWobblyDatalog/restore
+|4,39,3,0,1655635775,"~/MotionlessWobblyDatalog/restore"
+-'  3  0  ~/MotionlessWobblyDatalog/restore
+|4,39,3,0,1655635775,"~/MotionlessWobblyDatalog/restore"
+-'  3  0  ~/MotionlessWobblyDatalog/restore
+|4,39,3,0,1655635775,"~/MotionlessWobblyDatalog/restore"
+-'  3  0  ~/MotionlessWobblyDatalog/restore
+|4,39,3,0,1655635775,"~/MotionlessWobblyDatalog/restore"
+-'  3  0  ~/MotionlessWobblyDatalog/restore
+|4,39,3,0,1655635775,"~/MotionlessWobblyDatalog/restore"
+-'  1  0  ~/MotionlessWobblyDatalog/restore
+|4,39,1,0,1655635745,"~/MotionlessWobblyDatalog/restore"
+-'  1  0  ~/MotionlessWobblyDatalog/restore
+|4,39,1,0,1655635745,"~/MotionlessWobblyDatalog/restore"
+-'  1  0  ~/MotionlessWobblyDatalog/restore
+|4,39,1,0,1655635745,"~/MotionlessWobblyDatalog/restore"
+-'  1  0  ~/MotionlessWobblyDatalog/restore
+|4,39,1,0,1655635745,"~/MotionlessWobblyDatalog/restore"
+-'  1  0  ~/MotionlessWobblyDatalog/restore
+|4,39,1,0,1655635745,"~/MotionlessWobblyDatalog/restore"
+-'  1  0  ~/MotionlessWobblyDatalog/restore
+|4,39,1,0,1655635745,"~/MotionlessWobblyDatalog/restore"
+-'  1  0  ~/MotionlessWobblyDatalog/restore
+|4,39,1,0,1655635745,"~/MotionlessWobblyDatalog/restore"
+-'  1  0  ~/MotionlessWobblyDatalog/restore
+|4,39,1,0,1655635745,"~/MotionlessWobblyDatalog/restore"
+-'  1  0  ~/MotionlessWobblyDatalog/restore
+|4,39,1,0,1655635745,"~/MotionlessWobblyDatalog/restore"
+-'  1  0  ~/MotionlessWobblyDatalog/restore
+|4,39,1,0,1655635745,"~/MotionlessWobblyDatalog/restore"
+-'  1  0  ~/MotionlessWobblyDatalog/restore
+|4,39,1,0,1655635745,"~/MotionlessWobblyDatalog/restore"
+-'  1  0  ~/MotionlessWobblyDatalog/restore
+|4,39,1,0,1655635745,"~/MotionlessWobblyDatalog/restore"
+-'  1  0  ~/MotionlessWobblyDatalog/restore
+|4,39,1,0,1655635745,"~/MotionlessWobblyDatalog/restore"
+-'  1  0  ~/MotionlessWobblyDatalog/restore
+|4,39,1,0,1655635745,"~/MotionlessWobblyDatalog/restore"
+-'  1  0  ~/MotionlessWobblyDatalog/restore
+|4,39,1,0,1655635745,"~/MotionlessWobblyDatalog/restore"
+-'  1  0  ~/MotionlessWobblyDatalog/restore
+|4,39,1,0,1655635745,"~/MotionlessWobblyDatalog/restore"
 -'  1  0  ~/MotionlessWobblyDatalog/README.md
-|4,39,1,0,1655629060,"~/MotionlessWobblyDatalog/README.md"
+|4,39,1,0,1655631836,"~/MotionlessWobblyDatalog/README.md"
 -'  1  0  ~/MotionlessWobblyDatalog/README.md
-|4,39,1,0,1655629060,"~/MotionlessWobblyDatalog/README.md"
--'  1  0  ~/MotionlessWobblyDatalog/__LSP_SETTINGS__
-|4,39,1,0,1655628483,"~/MotionlessWobblyDatalog/__LSP_SETTINGS__"
--'  1  0  ~/MotionlessWobblyDatalog/__LSP_SETTINGS__
-|4,39,1,0,1655628483,"~/MotionlessWobblyDatalog/__LSP_SETTINGS__"
--'  1  0  ~/MotionlessWobblyDatalog/__LSP_SETTINGS__
-|4,39,1,0,1655628483,"~/MotionlessWobblyDatalog/__LSP_SETTINGS__"
--'  1  0  ~/MotionlessWobblyDatalog/__LSP_SETTINGS__
-|4,39,1,0,1655628483,"~/MotionlessWobblyDatalog/__LSP_SETTINGS__"
--'  1  0  ~/MotionlessWobblyDatalog/dotfiles/.vimrc
-|4,39,1,0,1655628476,"~/MotionlessWobblyDatalog/dotfiles/.vimrc"
--'  1  0  ~/MotionlessWobblyDatalog/dotfiles/.vimrc
-|4,39,1,0,1655628476,"~/MotionlessWobblyDatalog/dotfiles/.vimrc"
--'  1  0  ~/MotionlessWobblyDatalog/dotfiles/.vimrc
-|4,39,1,0,1655628476,"~/MotionlessWobblyDatalog/dotfiles/.vimrc"
--'  1  0  ~/MotionlessWobblyDatalog/dotfiles/.vimrc
-|4,39,1,0,1655628476,"~/MotionlessWobblyDatalog/dotfiles/.vimrc"
--'  1  0  ~/MotionlessWobblyDatalog/__LSP_SETTINGS__
-|4,39,1,0,1655628461,"~/MotionlessWobblyDatalog/__LSP_SETTINGS__"
--'  1  0  ~/MotionlessWobblyDatalog/__LSP_SETTINGS__
-|4,39,1,0,1655628461,"~/MotionlessWobblyDatalog/__LSP_SETTINGS__"
--'  1  0  ~/MotionlessWobblyDatalog/__LSP_SETTINGS__
-|4,39,1,0,1655628461,"~/MotionlessWobblyDatalog/__LSP_SETTINGS__"
--'  1  0  ~/MotionlessWobblyDatalog/__LSP_SETTINGS__
-|4,39,1,0,1655628461,"~/MotionlessWobblyDatalog/__LSP_SETTINGS__"
--'  1  0  ~/MotionlessWobblyDatalog/a.hs
-|4,39,1,0,1655628431,"~/MotionlessWobblyDatalog/a.hs"
--'  1  0  ~/MotionlessWobblyDatalog/a.hs
-|4,39,1,0,1655628431,"~/MotionlessWobblyDatalog/a.hs"
--'  1  0  ~/MotionlessWobblyDatalog/a.hs
-|4,39,1,0,1655628431,"~/MotionlessWobblyDatalog/a.hs"
--'  1  0  ~/MotionlessWobblyDatalog/a.hs
-|4,39,1,0,1655628431,"~/MotionlessWobblyDatalog/a.hs"
--'  1  0  ~/MotionlessWobblyDatalog/a.hs
-|4,39,1,0,1655628431,"~/MotionlessWobblyDatalog/a.hs"
--'  1  0  ~/MotionlessWobblyDatalog/a.hs
-|4,39,1,0,1655628431,"~/MotionlessWobblyDatalog/a.hs"
--'  1  0  ~/MotionlessWobblyDatalog/a.hs
-|4,39,1,0,1655628431,"~/MotionlessWobblyDatalog/a.hs"
--'  1  0  ~/MotionlessWobblyDatalog/a.hs
-|4,39,1,0,1655628431,"~/MotionlessWobblyDatalog/a.hs"
--'  1  0  ~/MotionlessWobblyDatalog/dotfiles/.vimrc
-|4,39,1,0,1655628317,"~/MotionlessWobblyDatalog/dotfiles/.vimrc"
--'  1  0  ~/MotionlessWobblyDatalog/dotfiles/.vimrc
-|4,39,1,0,1655628317,"~/MotionlessWobblyDatalog/dotfiles/.vimrc"
--'  1  0  ~/MotionlessWobblyDatalog/dotfiles/.vimrc
-|4,39,1,0,1655628317,"~/MotionlessWobblyDatalog/dotfiles/.vimrc"
--'  1  0  ~/MotionlessWobblyDatalog/dotfiles/.vimrc
-|4,39,1,0,1655628317,"~/MotionlessWobblyDatalog/dotfiles/.vimrc"
--'  1  0  ~/MotionlessWobblyDatalog/dotfiles/.vimrc
-|4,39,1,0,1655628317,"~/MotionlessWobblyDatalog/dotfiles/.vimrc"
--'  1  0  ~/MotionlessWobblyDatalog/dotfiles/.vimrc
-|4,39,1,0,1655628317,"~/MotionlessWobblyDatalog/dotfiles/.vimrc"
--'  1  0  ~/MotionlessWobblyDatalog/dotfiles/.vimrc
-|4,39,1,0,1655628317,"~/MotionlessWobblyDatalog/dotfiles/.vimrc"
--'  1  0  ~/MotionlessWobblyDatalog/dotfiles/.vimrc
-|4,39,1,0,1655628317,"~/MotionlessWobblyDatalog/dotfiles/.vimrc"
--'  1  0  ~/MotionlessWobblyDatalog/dotfiles/minimal.vimrc
-|4,39,1,0,1655628191,"~/MotionlessWobblyDatalog/dotfiles/minimal.vimrc"
--'  1  0  ~/MotionlessWobblyDatalog/dotfiles/minimal.vimrc
-|4,39,1,0,1655628191,"~/MotionlessWobblyDatalog/dotfiles/minimal.vimrc"
--'  1  0  ~/MotionlessWobblyDatalog/dotfiles/minimal.vimrc
-|4,39,1,0,1655628191,"~/MotionlessWobblyDatalog/dotfiles/minimal.vimrc"
--'  1  0  ~/MotionlessWobblyDatalog/dotfiles/minimal.vimrc
-|4,39,1,0,1655628191,"~/MotionlessWobblyDatalog/dotfiles/minimal.vimrc"
--'  1  0  ~/MotionlessWobblyDatalog/dotfiles/minimal.vimrc
-|4,39,1,0,1655628191,"~/MotionlessWobblyDatalog/dotfiles/minimal.vimrc"
--'  1  0  ~/MotionlessWobblyDatalog/dotfiles/minimal.vimrc
-|4,39,1,0,1655628191,"~/MotionlessWobblyDatalog/dotfiles/minimal.vimrc"
--'  1  0  ~/MotionlessWobblyDatalog/dotfiles/minimal.vimrc
-|4,39,1,0,1655628191,"~/MotionlessWobblyDatalog/dotfiles/minimal.vimrc"
--'  1  0  ~/MotionlessWobblyDatalog/dotfiles/minimal.vimrc
-|4,39,1,0,1655628191,"~/MotionlessWobblyDatalog/dotfiles/minimal.vimrc"
--'  1  0  ~/MotionlessWobblyDatalog/dotfiles/minimal.vimrc
-|4,39,1,0,1655628191,"~/MotionlessWobblyDatalog/dotfiles/minimal.vimrc"
--'  1  0  ~/MotionlessWobblyDatalog/dotfiles/minimal.vimrc
-|4,39,1,0,1655628191,"~/MotionlessWobblyDatalog/dotfiles/minimal.vimrc"
--'  1  0  ~/MotionlessWobblyDatalog/dotfiles/minimal.vimrc
-|4,39,1,0,1655628191,"~/MotionlessWobblyDatalog/dotfiles/minimal.vimrc"
--'  1  0  ~/MotionlessWobblyDatalog/dotfiles/minimal.vimrc
-|4,39,1,0,1655628191,"~/MotionlessWobblyDatalog/dotfiles/minimal.vimrc"
--'  1  0  ~/MotionlessWobblyDatalog/dotfiles/minimal.vimrc
-|4,39,1,0,1655628191,"~/MotionlessWobblyDatalog/dotfiles/minimal.vimrc"
--'  1  0  ~/MotionlessWobblyDatalog/dotfiles/minimal.vimrc
-|4,39,1,0,1655628191,"~/MotionlessWobblyDatalog/dotfiles/minimal.vimrc"
--'  1  0  ~/MotionlessWobblyDatalog/dotfiles/minimal.vimrc
-|4,39,1,0,1655628191,"~/MotionlessWobblyDatalog/dotfiles/minimal.vimrc"
--'  1  0  ~/MotionlessWobblyDatalog/dotfiles/minimal.vimrc
-|4,39,1,0,1655628191,"~/MotionlessWobblyDatalog/dotfiles/minimal.vimrc"
--'  1  0  ~/MotionlessWobblyDatalog/dotfiles/minimal.vimrc
-|4,39,1,0,1655628191,"~/MotionlessWobblyDatalog/dotfiles/minimal.vimrc"
--'  1  0  ~/MotionlessWobblyDatalog/dotfiles/minimal.vimrc
-|4,39,1,0,1655628191,"~/MotionlessWobblyDatalog/dotfiles/minimal.vimrc"
--'  1  0  ~/MotionlessWobblyDatalog/dotfiles/minimal.vimrc
-|4,39,1,0,1655628191,"~/MotionlessWobblyDatalog/dotfiles/minimal.vimrc"
--'  1  0  ~/MotionlessWobblyDatalog/dotfiles/minimal.vimrc
-|4,39,1,0,1655628191,"~/MotionlessWobblyDatalog/dotfiles/minimal.vimrc"
--'  1  0  ~/MotionlessWobblyDatalog/dotfiles/minimal.vimrc
-|4,39,1,0,1655628191,"~/MotionlessWobblyDatalog/dotfiles/minimal.vimrc"
--'  1  0  ~/MotionlessWobblyDatalog/dotfiles/minimal.vimrc
-|4,39,1,0,1655628191,"~/MotionlessWobblyDatalog/dotfiles/minimal.vimrc"
--'  1  0  ~/MotionlessWobblyDatalog/dotfiles/minimal.vimrc
-|4,39,1,0,1655628191,"~/MotionlessWobblyDatalog/dotfiles/minimal.vimrc"
--'  1  0  ~/MotionlessWobblyDatalog/dotfiles/minimal.vimrc
-|4,39,1,0,1655628191,"~/MotionlessWobblyDatalog/dotfiles/minimal.vimrc"
--'  1  0  ~/MotionlessWobblyDatalog/dotfiles/minimal.vimrc
-|4,39,1,0,1655628191,"~/MotionlessWobblyDatalog/dotfiles/minimal.vimrc"
--'  1  0  ~/MotionlessWobblyDatalog/dotfiles/minimal.vimrc
-|4,39,1,0,1655628191,"~/MotionlessWobblyDatalog/dotfiles/minimal.vimrc"
--'  1  0  ~/MotionlessWobblyDatalog/dotfiles/minimal.vimrc
-|4,39,1,0,1655628191,"~/MotionlessWobblyDatalog/dotfiles/minimal.vimrc"
--'  1  0  ~/MotionlessWobblyDatalog/dotfiles/minimal.vimrc
-|4,39,1,0,1655628191,"~/MotionlessWobblyDatalog/dotfiles/minimal.vimrc"
--'  1  0  ~/MotionlessWobblyDatalog/dotfiles/minimal.vimrc
-|4,39,1,0,1655628191,"~/MotionlessWobblyDatalog/dotfiles/minimal.vimrc"
--'  1  0  ~/MotionlessWobblyDatalog/dotfiles/minimal.vimrc
-|4,39,1,0,1655628191,"~/MotionlessWobblyDatalog/dotfiles/minimal.vimrc"
--'  1  0  ~/MotionlessWobblyDatalog/dotfiles/minimal.vimrc
-|4,39,1,0,1655628191,"~/MotionlessWobblyDatalog/dotfiles/minimal.vimrc"
--'  1  0  ~/MotionlessWobblyDatalog/dotfiles/minimal.vimrc
-|4,39,1,0,1655628191,"~/MotionlessWobblyDatalog/dotfiles/minimal.vimrc"
--'  1  0  ~/MotionlessWobblyDatalog/main.sh
-|4,39,1,0,1655628021,"~/MotionlessWobblyDatalog/main.sh"
--'  1  0  ~/MotionlessWobblyDatalog/main.sh
-|4,39,1,0,1655628021,"~/MotionlessWobblyDatalog/main.sh"
--'  1  0  ~/MotionlessWobblyDatalog/main.sh
-|4,39,1,0,1655628021,"~/MotionlessWobblyDatalog/main.sh"
--'  1  0  ~/MotionlessWobblyDatalog/main.sh
-|4,39,1,0,1655628021,"~/MotionlessWobblyDatalog/main.sh"
--'  1  0  ~/MotionlessWobblyDatalog/main.sh
-|4,39,1,0,1655628021,"~/MotionlessWobblyDatalog/main.sh"
--'  1  0  ~/MotionlessWobblyDatalog/main.sh
-|4,39,1,0,1655628021,"~/MotionlessWobblyDatalog/main.sh"
--'  1  0  ~/MotionlessWobblyDatalog/main.sh
-|4,39,1,0,1655628021,"~/MotionlessWobblyDatalog/main.sh"
--'  1  0  ~/MotionlessWobblyDatalog/main.sh
-|4,39,1,0,1655628021,"~/MotionlessWobblyDatalog/main.sh"
--'  1  0  ~/MotionlessWobblyDatalog/main.sh
-|4,39,1,0,1655628021,"~/MotionlessWobblyDatalog/main.sh"
--'  1  0  ~/MotionlessWobblyDatalog/main.sh
-|4,39,1,0,1655628021,"~/MotionlessWobblyDatalog/main.sh"
--'  1  0  ~/MotionlessWobblyDatalog/main.sh
-|4,39,1,0,1655628021,"~/MotionlessWobblyDatalog/main.sh"
--'  1  0  ~/MotionlessWobblyDatalog/main.sh
-|4,39,1,0,1655628021,"~/MotionlessWobblyDatalog/main.sh"
--'  1  0  ~/MotionlessWobblyDatalog/main.sh
-|4,39,1,0,1655628021,"~/MotionlessWobblyDatalog/main.sh"
--'  1  0  ~/MotionlessWobblyDatalog/main.sh
-|4,39,1,0,1655628021,"~/MotionlessWobblyDatalog/main.sh"
--'  1  0  ~/MotionlessWobblyDatalog/main.sh
-|4,39,1,0,1655628021,"~/MotionlessWobblyDatalog/main.sh"
--'  1  0  ~/MotionlessWobblyDatalog/main.sh
-|4,39,1,0,1655628021,"~/MotionlessWobblyDatalog/main.sh"
--'  1  0  ~/MotionlessWobblyDatalog/main.sh
-|4,39,1,0,1655628021,"~/MotionlessWobblyDatalog/main.sh"
--'  1  0  ~/MotionlessWobblyDatalog/main.sh
-|4,39,1,0,1655628021,"~/MotionlessWobblyDatalog/main.sh"
--'  1  0  ~/MotionlessWobblyDatalog/main.sh
-|4,39,1,0,1655628021,"~/MotionlessWobblyDatalog/main.sh"
--'  1  0  ~/MotionlessWobblyDatalog/main.sh
-|4,39,1,0,1655628021,"~/MotionlessWobblyDatalog/main.sh"
--'  1  0  ~/MotionlessWobblyDatalog/main.sh
-|4,39,1,0,1655628021,"~/MotionlessWobblyDatalog/main.sh"
--'  1  0  ~/MotionlessWobblyDatalog/main.sh
-|4,39,1,0,1655628021,"~/MotionlessWobblyDatalog/main.sh"
--'  1  0  ~/MotionlessWobblyDatalog/main.sh
-|4,39,1,0,1655628021,"~/MotionlessWobblyDatalog/main.sh"
--'  1  0  ~/MotionlessWobblyDatalog/main.sh
-|4,39,1,0,1655628021,"~/MotionlessWobblyDatalog/main.sh"
--'  1  0  ~/MotionlessWobblyDatalog/main.sh
-|4,39,1,0,1655628021,"~/MotionlessWobblyDatalog/main.sh"
--'  1  0  ~/MotionlessWobblyDatalog/main.sh
-|4,39,1,0,1655628021,"~/MotionlessWobblyDatalog/main.sh"
--'  1  0  ~/MotionlessWobblyDatalog/main.sh
-|4,39,1,0,1655628021,"~/MotionlessWobblyDatalog/main.sh"
--'  1  0  ~/MotionlessWobblyDatalog/main.sh
-|4,39,1,0,1655628021,"~/MotionlessWobblyDatalog/main.sh"
--'  1  0  ~/MotionlessWobblyDatalog/main.sh
-|4,39,1,0,1655628021,"~/MotionlessWobblyDatalog/main.sh"
--'  1  0  ~/MotionlessWobblyDatalog/main.sh
-|4,39,1,0,1655628021,"~/MotionlessWobblyDatalog/main.sh"
--'  1  0  ~/MotionlessWobblyDatalog/main.sh
-|4,39,1,0,1655628021,"~/MotionlessWobblyDatalog/main.sh"
--'  1  0  ~/MotionlessWobblyDatalog/main.sh
-|4,39,1,0,1655628021,"~/MotionlessWobblyDatalog/main.sh"
+|4,39,1,0,1655631836,"~/MotionlessWobblyDatalog/README.md"
+-'  1  0  ~/MotionlessWobblyDatalog/README.md
+|4,39,1,0,1655631836,"~/MotionlessWobblyDatalog/README.md"
+-'  1  0  ~/MotionlessWobblyDatalog/README.md
+|4,39,1,0,1655631836,"~/MotionlessWobblyDatalog/README.md"
+-'  1  0  ~/MotionlessWobblyDatalog/README.md
+|4,39,1,0,1655631836,"~/MotionlessWobblyDatalog/README.md"
+-'  1  0  ~/MotionlessWobblyDatalog/README.md
+|4,39,1,0,1655631836,"~/MotionlessWobblyDatalog/README.md"
+-'  1  0  ~/MotionlessWobblyDatalog/README.md
+|4,39,1,0,1655631836,"~/MotionlessWobblyDatalog/README.md"
+-'  1  0  ~/MotionlessWobblyDatalog/README.md
+|4,39,1,0,1655631836,"~/MotionlessWobblyDatalog/README.md"
+-'  1  0  ~/MotionlessWobblyDatalog/README.md
+|4,39,1,0,1655631836,"~/MotionlessWobblyDatalog/README.md"
+-'  1  0  ~/MotionlessWobblyDatalog/README.md
+|4,39,1,0,1655631836,"~/MotionlessWobblyDatalog/README.md"
+-'  1  0  ~/MotionlessWobblyDatalog/README.md
+|4,39,1,0,1655631836,"~/MotionlessWobblyDatalog/README.md"
+-'  1  0  ~/MotionlessWobblyDatalog/README.md
+|4,39,1,0,1655631836,"~/MotionlessWobblyDatalog/README.md"
+-'  1  0  ~/MotionlessWobblyDatalog/README.md
+|4,39,1,0,1655631836,"~/MotionlessWobblyDatalog/README.md"
+-'  1  0  ~/MotionlessWobblyDatalog/README.md
+|4,39,1,0,1655631836,"~/MotionlessWobblyDatalog/README.md"
+-'  1  0  ~/MotionlessWobblyDatalog/README.md
+|4,39,1,0,1655631836,"~/MotionlessWobblyDatalog/README.md"
+-'  1  0  ~/MotionlessWobblyDatalog/README.md
+|4,39,1,0,1655631836,"~/MotionlessWobblyDatalog/README.md"
+-'  1  0  ~/MotionlessWobblyDatalog/README.md
+|4,39,1,0,1655631836,"~/MotionlessWobblyDatalog/README.md"
+-'  1  0  ~/MotionlessWobblyDatalog/README.md
+|4,39,1,0,1655631836,"~/MotionlessWobblyDatalog/README.md"
+-'  1  0  ~/MotionlessWobblyDatalog/README.md
+|4,39,1,0,1655631836,"~/MotionlessWobblyDatalog/README.md"
+-'  1  0  ~/MotionlessWobblyDatalog/README.md
+|4,39,1,0,1655631836,"~/MotionlessWobblyDatalog/README.md"
+-'  1  0  ~/MotionlessWobblyDatalog/README.md
+|4,39,1,0,1655631836,"~/MotionlessWobblyDatalog/README.md"
+-'  1  0  ~/MotionlessWobblyDatalog/README.md
+|4,39,1,0,1655631836,"~/MotionlessWobblyDatalog/README.md"
+-'  1  0  ~/MotionlessWobblyDatalog/README.md
+|4,39,1,0,1655631836,"~/MotionlessWobblyDatalog/README.md"
+-'  1  0  ~/MotionlessWobblyDatalog/README.md
+|4,39,1,0,1655631836,"~/MotionlessWobblyDatalog/README.md"
+-'  1  0  ~/MotionlessWobblyDatalog/README.md
+|4,39,1,0,1655631836,"~/MotionlessWobblyDatalog/README.md"
+-'  1  0  ~/MotionlessWobblyDatalog/README.md
+|4,39,1,0,1655631836,"~/MotionlessWobblyDatalog/README.md"
+-'  1  0  ~/MotionlessWobblyDatalog/README.md
+|4,39,1,0,1655631836,"~/MotionlessWobblyDatalog/README.md"
+-'  1  0  ~/MotionlessWobblyDatalog/README.md
+|4,39,1,0,1655631836,"~/MotionlessWobblyDatalog/README.md"
+-'  1  0  ~/MotionlessWobblyDatalog/README.md
+|4,39,1,0,1655631836,"~/MotionlessWobblyDatalog/README.md"
+-'  1  0  ~/MotionlessWobblyDatalog/README.md
+|4,39,1,0,1655631836,"~/MotionlessWobblyDatalog/README.md"
+-'  1  0  ~/MotionlessWobblyDatalog/README.md
+|4,39,1,0,1655631836,"~/MotionlessWobblyDatalog/README.md"
+-'  1  0  ~/MotionlessWobblyDatalog/README.md
+|4,39,1,0,1655631836,"~/MotionlessWobblyDatalog/README.md"
+-'  2  27  ~/MotionlessWobblyDatalog/.replit
+|4,39,2,27,1655631829,"~/MotionlessWobblyDatalog/.replit"
+-'  2  27  ~/MotionlessWobblyDatalog/.replit
+|4,39,2,27,1655631829,"~/MotionlessWobblyDatalog/.replit"
+-'  2  27  ~/MotionlessWobblyDatalog/.replit
+|4,39,2,27,1655631829,"~/MotionlessWobblyDatalog/.replit"
+-'  2  27  ~/MotionlessWobblyDatalog/.replit
+|4,39,2,27,1655631829,"~/MotionlessWobblyDatalog/.replit"
+-'  2  27  ~/MotionlessWobblyDatalog/.replit
+|4,39,2,27,1655631829,"~/MotionlessWobblyDatalog/.replit"
+-'  2  27  ~/MotionlessWobblyDatalog/.replit
+|4,39,2,27,1655631829,"~/MotionlessWobblyDatalog/.replit"
+-'  2  27  ~/MotionlessWobblyDatalog/.replit
+|4,39,2,27,1655631829,"~/MotionlessWobblyDatalog/.replit"
+-'  2  27  ~/MotionlessWobblyDatalog/.replit
+|4,39,2,27,1655631829,"~/MotionlessWobblyDatalog/.replit"
+-'  2  27  ~/MotionlessWobblyDatalog/.replit
+|4,39,2,27,1655631829,"~/MotionlessWobblyDatalog/.replit"
+-'  2  27  ~/MotionlessWobblyDatalog/.replit
+|4,39,2,27,1655631829,"~/MotionlessWobblyDatalog/.replit"
 
 # History of marks within files (newest to oldest):
+
+> ~/.bash_logout
+	*	1655636759	0
+	"	8	0
+	^	8	0
+	.	9	0
+	+	9	0
+
+> ~/MotionlessWobblyDatalog/main.sh
+	*	1655636467	0
+	"	4	12
+	^	4	13
+	.	4	12
+	+	4	12
+
+> ~/MotionlessWobblyDatalog/dotfiles/.bashrc
+	*	1655636267	0
+	"	132	35
+	^	132	36
+	.	132	35
+	+	132	34
+	+	133	34
+	+	133	0
+	+	132	35
+
+> ~/MotionlessWobblyDatalog/restore
+	*	1655635773	0
+	"	3	0
+	.	3	0
+	+	3	0
+
+> ~/MotionlessWobblyDatalog/README.md
+	*	1655631833	0
+	"	1	0
+	.	3	0
+	+	3	0
+	+	2	0
+	+	3	0
+
+> ~/MotionlessWobblyDatalog/.replit
+	*	1655631827	0
+	"	2	27
+	^	2	28
+	.	2	27
+	+	6	0
+	+	7	0
+	+	6	1
+	+	7	21
+	+	1	23
+	+	2	27
+
+> ~/MotionlessWobblyDatalog/replit.sh
+	*	1655631803	0
+	"	1	0
+
+> ~/MotionlessWobblyDatalog/restore.sh
+	*	1655631681	0
+	"	3	0
+	.	4	0
+	+	4	0
 
 > ~/MotionlessWobblyDatalog/.gitignore
 	*	1655629169	0
@@ -292,14 +381,6 @@
 	^	3	12
 	.	3	11
 	+	3	11
-
-> ~/MotionlessWobblyDatalog/README.md
-	*	1655629078	0
-	"	2	0
-	.	3	0
-	+	3	0
-	+	2	0
-	+	3	0
 
 > ~/MotionlessWobblyDatalog/__LSP_SETTINGS__
 	*	1655628480	0
@@ -322,10 +403,9 @@
 	.	20	0
 	+	20	0
 
-> ~/MotionlessWobblyDatalog/main.sh
-	*	1655628046	0
-	"	1	0
-
 > /nix/store/p51drj5ad1smdlcmkyp06hb33hl3w0fh-vim-8.2.2567/share/vim/vim82/doc/starting.txt
 	*	1655627846	0
 	"	1459	24
+
+> ~/MotionlessWobblyDatalog/VS.Vim.Buffer: 1: VS.Vim.Buffer.Default
+	"	1	0

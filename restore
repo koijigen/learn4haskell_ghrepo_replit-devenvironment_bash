@@ -1,0 +1,4 @@
+cp dotfiles/.vimrc ~/.vimrc
+cp dotfiles/.bashrc ~/.bashrc
+cp dotfiles/.bash_history ~/.bash_history
+source ~/.bashrc
