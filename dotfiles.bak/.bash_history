@@ -1,3 +1,4 @@
+vim restore
 source .bashrc
 source
 source ~/.bashrc
@@ -25,6 +26,7 @@ history
 #1655636458
 vim main.sh
 #1655636521
+. restore
 #1655636549
 tail -n find.log
 #1655636556
@@ -33,27 +35,3 @@ tail -n 10 find.log
 find ~/.cargo | tee find.log
 #1655636698
 vim ~/.bash_logout 
-#1655780275
-#1655780282
-#1655780303
-vim restore
-#1655780388
-cp dotfiles dotfiles.bak -r
-#1655780393
-#1655780412
-#1655780419
-#1655780421
-vim dotfiles/.vimrc
-#1655788586
-. restore
-#1655788634
-git clone https://github.com/koijigen/learn4haskell.git
-#1655788639
-cd learn4haskell/
-#1655788641
-ls -a
-#1655788770
-#1655788822
-cabal update
-#1655788931
-make test-chapter1

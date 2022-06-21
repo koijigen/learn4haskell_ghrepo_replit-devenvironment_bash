@@ -1,4 +1,11 @@
+replitdir=`basename \`pwd\``
+regex='s/\/replit-devenvironmentbash/\/'$replitdir'/g'
+sed -i -e $regex dotfiles/.bashrc 
+sed -i -e $regex dotfiles/.vimrc 
+sed -i -e $regex dotfiles/minimal.vimrc 
+
 cp dotfiles/.vimrc ~/.vimrc
 cp dotfiles/.bashrc ~/.bashrc
 cp dotfiles/.bash_history ~/.bash_history
+
 source ~/.bashrc

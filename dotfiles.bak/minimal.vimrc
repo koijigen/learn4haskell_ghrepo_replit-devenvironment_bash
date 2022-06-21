@@ -7,14 +7,14 @@
 set nocompatible hidden laststatus=2
 
 
-if !filereadable(expand('/home/runner/learn4haskellghreporeplit-devenvironmentbash/dotfiles/plug.vim'))
-  silent !curl -fLo /home/runner/learn4haskellghreporeplit-devenvironmentbash/dotfiles/plug.vim
+if !filereadable(expand('/home/runner/replit-devenvironmentbash/dotfiles/plug.vim'))
+  silent !curl -fLo /home/runner/replit-devenvironmentbash/dotfiles/plug.vim
     \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 endif
 
-source /home/runner/learn4haskellghreporeplit-devenvironmentbash/dotfiles/plug.vim
+source /home/runner/replit-devenvironmentbash/dotfiles/plug.vim
 
-call plug#begin('/home/runner/learn4haskellghreporeplit-devenvironmentbash/dotfiles/.vim.plugged')
+call plug#begin('/home/runner/replit-devenvironmentbash/dotfiles/.vim.plugged')
 Plug 'prabirshrestha/asyncomplete.vim'
 Plug 'prabirshrestha/vim-lsp'
 Plug 'mattn/vim-lsp-settings'
