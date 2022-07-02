@@ -10,23 +10,36 @@
 
 # hlsearch on (H) or off (h):
 ~h
+# Last Search Pattern:
+~MSle0~/mouse
+
 # Last Substitute Search Pattern:
-~MSle0~&.bashrc
+~MSle0&.bashrc
 
 # Last Substitute String:
 $.bash_history
 
 # Command Line History (newest to oldest):
+:q
+|2,0,1656755320,,"q"
+:w
+|2,0,1656755309,,"w"
+:q!
+|2,0,1656755264,,"q!"
+:::
+|2,0,1656755257,,"::"
+:!ls
+|2,0,1656751988,,"!ls"
+:!rm *.swp
+|2,0,1656751970,,"!rm *.swp"
+:w!
+|2,0,1656751415,,"w!"
+:;:w
+|2,0,1656751409,,";:w"
 :wq
 |2,0,1656751242,,"wq"
 :qhhhh
 |2,0,1656751221,,"qhhhh"
-:w
-|2,0,1656751204,,"w"
-:q
-|2,0,1655780425,,"q"
-:q!
-|2,0,1655636761,,"q!"
 :s/.bashrc/.bash_history/g
 |2,0,1655635770,,"s/.bashrc/.bash_history/g"
 :w restore
@@ -53,6 +66,12 @@ $.bash_history
 |2,0,1655627844,,"help viminfo"
 
 # Search String History (newest to oldest):
+?/mouse
+|2,1,1656755313,47,"mouse"
+?/copy
+|2,1,1656754973,47,"copy"
+?/yank
+|2,1,1656754579,47,"yank"
 ? .bashrc
 |2,1,1655635770,,".bashrc"
 
@@ -63,259 +82,453 @@ $.bash_history
 # Debug Line History (newest to oldest):
 
 # Registers:
-"0	LINE	0
-	cp /home/runner/MotionlessWobblyDatalog/dotfiles/.bashrc ~/.bashrc
-|3,0,0,1,1,0,1655635748,"cp /home/runner/MotionlessWobblyDatalog/dotfiles/.bashrc ~/.bashrc"
+""0	LINE	0
+	setw -g utf8 on
+|3,1,0,1,1,0,1656752758,"setw -g utf8 on"
 "1	LINE	0
 	
-|3,0,1,1,1,0,1655631672,""
+|3,0,1,1,1,0,1656755202,""
 "2	LINE	0
-	pwd
-|3,0,2,1,1,0,1655631671,"pwd"
+	
+|3,0,2,1,1,0,1656755202,""
 "3	LINE	0
-	touch test
-|3,0,3,1,1,0,1655631279,"touch test"
+	
+|3,0,3,1,1,0,1656755201,""
 "4	LINE	0
-	echo "restored."
-|3,0,4,1,1,0,1655630892,"echo \"restored.\""
-"5	LINE	0
-	3. `. restore.sh`
-|3,0,5,1,1,0,1655629073,"3. `. restore.sh`"
-"6	LINE	0
-	2. `ctrl + shift + s`(open shell).
-|3,0,6,1,1,0,1655629063,"2. `ctrl + shift + s`(open shell)."
+	
+	
+	
+	
+	
+	# change prefix to Ctrl-a (like in gnu-screen)
+	unbind C-b
+	set-option -g prefix C-a
+	bind-key C-a send-prefix
+	# start with window 1 (instead of 0)
+	set -g base-index 1
+	# start with pane 1
+	set -g pane-base-index 1
+	# screen mode
+	set -g default-terminal "screen-256color"
+	# source config file
+	bind r source-file ~/.tmux.conf
+	# history
+	set -g history-limit 4096
+	# allow terminal scrolling
+	set-option -g terminal-overrides 'xterm*:smcup@:rmcup@'
+	# use vi mode
+	setw -g mode-keys vi
+	set -g status-keys vi
+	#setw -g utf8 on
+	# use mouse in copy mode
+	#setw -g mode-mouse off
+	# tmux-zoom.sh
+	bind C-z run "tmux-zoom.sh"
+	# easy-to-remember split pane commands
+	bind | split-window -h
+	bind - split-window -v
+	unbind '"'
+	unbind %
+	# with mouse (click on pretty little boxes)
+	#set -g mouse-select-window on
+	# colon :
+	bind : command-prompt
+	# panes
+	#set -g mouse-select-pane on
+	#set -g pane-border-fg black
+	#set -g pane-active-border-fg brightred
+	#set -g mouse-select-pane on
+	#set -g mouse-resize-pane on
+	# moving between panes with vim movement keys
+	bind h select-pane -L
+	bind j select-pane -D
+	bind k select-pane -U
+	bind l select-pane -R
+	# resize the pane
+|3,0,4,1,50,0,1656755199,"","","","","","# change prefix to Ctrl-a (like in gnu-screen)","unbind C-b","set-option -g prefix C-a","bind-key C-a send-prefix","# start with window 1 (instead of 0)","set -g base-index 1","# start with pane 1","set -g pane-base-index 1","# screen mode","set -g default-terminal \"screen-256color\"","# source config file","bind r source-file ~/.tmux.conf","# history","set -g history-limit 4096","# allow terminal scrolling",>57
+|<"set-option -g terminal-overrides 'xterm*:smcup@:rmcup@'","# use vi mode","setw -g mode-keys vi","set -g status-keys vi","#setw -g utf8 on","# use mouse in copy mode","#setw -g mode-mouse off","# tmux-zoom.sh","bind C-z run \"tmux-zoom.sh\"","# easy-to-remember split pane commands","bind | split-window -h","bind - split-window -v","unbind '\"'","unbind %","# with mouse (click on pretty little boxes)","#set -g mouse-select-window on","# colon :","bind : command-prompt","# panes",>30
+|<"#set -g mouse-select-pane on","#set -g pane-border-fg black","#set -g pane-active-border-fg brightred","#set -g mouse-select-pane on","#set -g mouse-resize-pane on","# moving between panes with vim movement keys","bind h select-pane -L","bind j select-pane -D","bind k select-pane -U","bind l select-pane -R","# resize the pane"
+"5	BLOCK	0
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+|3,0,5,2,50,0,1656752713," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "
+"6	BLOCK	1
+	 #
+	 u
+	 s
+	 b
+	 #
+	 s
+	 #
+	 s
+	 #
+	 s
+	 #
+	 b
+	 #
+	 s
+	 #
+	 s
+	 #
+	 s
+	 s
+	 s
+	 #
+	 s
+	 #
+	 b
+	 #
+	 b
+	 b
+	 u
+	 u
+	 #
+	 s
+	 #
+	 b
+	 #
+	 s
+	 s
+	 s
+	 s
+	 s
+	 #
+	 b
+	 b
+	 b
+	 b
+	 #
+	 b
+	 b
+	 b
+	 b
+	 #
+|3,0,6,2,50,1,1656752672," #"," u"," s"," b"," #"," s"," #"," s"," #"," s"," #"," b"," #"," s"," #"," s"," #"," s"," s"," s"," #"," s"," #"," b"," #"," b"," b"," u"," u"," #"," s"," #"," b"," #"," s"," s"," s"," s"," s"," #"," b"," b"," b"," b"," #"," b"," b"," b"," b"," #"
 "7	LINE	0
 	
-|3,0,7,1,1,0,1655627922,""
-""-	CHAR	0
-	o
-|3,1,36,0,1,0,1656751231,"o"
+|3,0,7,1,1,0,1655631672,""
+"8	LINE	0
+	pwd
+|3,0,8,1,1,0,1655631671,"pwd"
+"9	LINE	0
+	touch test
+|3,0,9,1,1,0,1655631279,"touch test"
+"z@	CHAR	0
+	i#€ýa
+|3,2,35,0,1,0,1656753170,"i#€ýa"
+"-	CHAR	0
+	 
+|3,0,36,0,1,0,1656752700," "
 
 # File marks:
-'0  4  37  ~/learn4haskellghreporeplit-devenvironmentbash/README.md
-|4,48,4,37,1656751242,"~/learn4haskellghreporeplit-devenvironmentbash/README.md"
-'1  4  0  ~/replit-devenvironmentbash/dotfiles/.vimrc
-|4,49,4,0,1655780425,"~/replit-devenvironmentbash/dotfiles/.vimrc"
-'2  5  0  ~/replit-devenvironmentbash/dotfiles/.vimrc
-|4,50,5,0,1655780416,"~/replit-devenvironmentbash/dotfiles/.vimrc"
-'3  5  0  ~/replit-devenvironmentbash/dotfiles/.vimrc
-|4,51,5,0,1655780416,"~/replit-devenvironmentbash/dotfiles/.vimrc"
-'4  8  0  ~/.bash_logout
-|4,52,8,0,1655636761,"~/.bash_logout"
-'5  4  12  ~/MotionlessWobblyDatalog/main.sh
-|4,53,4,12,1655636469,"~/MotionlessWobblyDatalog/main.sh"
-'6  132  35  ~/MotionlessWobblyDatalog/dotfiles/.bashrc
-|4,54,132,35,1655636270,"~/MotionlessWobblyDatalog/dotfiles/.bashrc"
-'7  133  0  ~/MotionlessWobblyDatalog/dotfiles/.bashrc
-|4,55,133,0,1655636224,"~/MotionlessWobblyDatalog/dotfiles/.bashrc"
-'8  133  0  ~/MotionlessWobblyDatalog/dotfiles/.bashrc
-|4,56,133,0,1655636224,"~/MotionlessWobblyDatalog/dotfiles/.bashrc"
-'9  3  0  ~/MotionlessWobblyDatalog/restore
-|4,57,3,0,1655635775,"~/MotionlessWobblyDatalog/restore"
+'0  12  8  ~/learn4haskellghreporeplit-devenvironmentbash/dotfiles/.tmux.conf
+|4,48,12,8,1656755320,"~/learn4haskellghreporeplit-devenvironmentbash/dotfiles/.tmux.conf"
+'1  217  35  ~/learn4haskellghreporeplit-devenvironmentbash/learn4haskell/src/Chapter1.hs
+|4,49,217,35,1656755264,"~/learn4haskellghreporeplit-devenvironmentbash/learn4haskell/src/Chapter1.hs"
+'2  60  0  ~/learn4haskellghreporeplit-devenvironmentbash/dotfiles/.tmux.conf
+|4,50,60,0,1656755208,"~/learn4haskellghreporeplit-devenvironmentbash/dotfiles/.tmux.conf"
+'3  60  0  ~/learn4haskellghreporeplit-devenvironmentbash/dotfiles/.tmux.conf
+|4,51,60,0,1656755208,"~/learn4haskellghreporeplit-devenvironmentbash/dotfiles/.tmux.conf"
+'4  61  0  ~/learn4haskellghreporeplit-devenvironmentbash/dotfiles/.tmux.conf
+|4,52,61,0,1656754690,"~/learn4haskellghreporeplit-devenvironmentbash/dotfiles/.tmux.conf"
+'5  79  0  ~/learn4haskellghreporeplit-devenvironmentbash/dotfiles/.tmux.conf
+|4,53,79,0,1656754690,"~/learn4haskellghreporeplit-devenvironmentbash/dotfiles/.tmux.conf"
+'6  61  0  ~/learn4haskellghreporeplit-devenvironmentbash/dotfiles/.tmux.conf
+|4,54,61,0,1656754690,"~/learn4haskellghreporeplit-devenvironmentbash/dotfiles/.tmux.conf"
+'7  79  0  ~/learn4haskellghreporeplit-devenvironmentbash/dotfiles/.tmux.conf
+|4,55,79,0,1656754690,"~/learn4haskellghreporeplit-devenvironmentbash/dotfiles/.tmux.conf"
+'8  112  0  ~/learn4haskellghreporeplit-devenvironmentbash/learn4haskell/src/Chapter1.hs
+|4,56,112,0,1656754076,"~/learn4haskellghreporeplit-devenvironmentbash/learn4haskell/src/Chapter1.hs"
+'9  112  0  ~/learn4haskellghreporeplit-devenvironmentbash/learn4haskell/src/Chapter1.hs
+|4,57,112,0,1656754076,"~/learn4haskellghreporeplit-devenvironmentbash/learn4haskell/src/Chapter1.hs"
 
 # Jumplist (newest first):
--'  4  37  ~/learn4haskellghreporeplit-devenvironmentbash/README.md
-|4,39,4,37,1656751242,"~/learn4haskellghreporeplit-devenvironmentbash/README.md"
--'  1  0  ~/learn4haskellghreporeplit-devenvironmentbash/README.md
-|4,39,1,0,1656751146,"~/learn4haskellghreporeplit-devenvironmentbash/README.md"
--'  4  0  ~/replit-devenvironmentbash/dotfiles/.vimrc
-|4,39,4,0,1655780425,"~/replit-devenvironmentbash/dotfiles/.vimrc"
--'  4  0  ~/replit-devenvironmentbash/dotfiles/.vimrc
-|4,39,4,0,1655780425,"~/replit-devenvironmentbash/dotfiles/.vimrc"
--'  1  0  ~/replit-devenvironmentbash/dotfiles/.vimrc
-|4,39,1,0,1655780421,"~/replit-devenvironmentbash/dotfiles/.vimrc"
--'  1  0  ~/replit-devenvironmentbash/dotfiles/.vimrc
-|4,39,1,0,1655780421,"~/replit-devenvironmentbash/dotfiles/.vimrc"
--'  5  0  ~/replit-devenvironmentbash/dotfiles/.vimrc
-|4,39,5,0,1655780416,"~/replit-devenvironmentbash/dotfiles/.vimrc"
--'  5  0  ~/replit-devenvironmentbash/dotfiles/.vimrc
-|4,39,5,0,1655780416,"~/replit-devenvironmentbash/dotfiles/.vimrc"
--'  5  0  ~/replit-devenvironmentbash/dotfiles/.vimrc
-|4,39,5,0,1655780416,"~/replit-devenvironmentbash/dotfiles/.vimrc"
--'  5  0  ~/replit-devenvironmentbash/dotfiles/.vimrc
-|4,39,5,0,1655780416,"~/replit-devenvironmentbash/dotfiles/.vimrc"
--'  1  0  ~/replit-devenvironmentbash/dotfiles/.vimrc
-|4,39,1,0,1655780412,"~/replit-devenvironmentbash/dotfiles/.vimrc"
--'  1  0  ~/replit-devenvironmentbash/dotfiles/.vimrc
-|4,39,1,0,1655780412,"~/replit-devenvironmentbash/dotfiles/.vimrc"
--'  8  0  ~/.bash_logout
-|4,39,8,0,1655636761,"~/.bash_logout"
--'  8  0  ~/.bash_logout
-|4,39,8,0,1655636761,"~/.bash_logout"
--'  8  0  ~/.bash_logout
-|4,39,8,0,1655636761,"~/.bash_logout"
--'  8  0  ~/.bash_logout
-|4,39,8,0,1655636761,"~/.bash_logout"
--'  8  0  ~/.bash_logout
-|4,39,8,0,1655636761,"~/.bash_logout"
--'  8  0  ~/.bash_logout
-|4,39,8,0,1655636761,"~/.bash_logout"
--'  8  0  ~/.bash_logout
-|4,39,8,0,1655636761,"~/.bash_logout"
--'  8  0  ~/.bash_logout
-|4,39,8,0,1655636761,"~/.bash_logout"
--'  1  0  ~/.bash_logout
-|4,39,1,0,1655636698,"~/.bash_logout"
--'  1  0  ~/.bash_logout
-|4,39,1,0,1655636698,"~/.bash_logout"
--'  1  0  ~/.bash_logout
-|4,39,1,0,1655636698,"~/.bash_logout"
--'  1  0  ~/.bash_logout
-|4,39,1,0,1655636698,"~/.bash_logout"
--'  1  0  ~/.bash_logout
-|4,39,1,0,1655636698,"~/.bash_logout"
--'  1  0  ~/.bash_logout
-|4,39,1,0,1655636698,"~/.bash_logout"
--'  1  0  ~/.bash_logout
-|4,39,1,0,1655636698,"~/.bash_logout"
--'  1  0  ~/.bash_logout
-|4,39,1,0,1655636698,"~/.bash_logout"
--'  4  12  ~/MotionlessWobblyDatalog/main.sh
-|4,39,4,12,1655636469,"~/MotionlessWobblyDatalog/main.sh"
--'  4  12  ~/MotionlessWobblyDatalog/main.sh
-|4,39,4,12,1655636469,"~/MotionlessWobblyDatalog/main.sh"
--'  4  12  ~/MotionlessWobblyDatalog/main.sh
-|4,39,4,12,1655636469,"~/MotionlessWobblyDatalog/main.sh"
--'  4  12  ~/MotionlessWobblyDatalog/main.sh
-|4,39,4,12,1655636469,"~/MotionlessWobblyDatalog/main.sh"
--'  4  12  ~/MotionlessWobblyDatalog/main.sh
-|4,39,4,12,1655636469,"~/MotionlessWobblyDatalog/main.sh"
--'  4  12  ~/MotionlessWobblyDatalog/main.sh
-|4,39,4,12,1655636469,"~/MotionlessWobblyDatalog/main.sh"
--'  4  12  ~/MotionlessWobblyDatalog/main.sh
-|4,39,4,12,1655636469,"~/MotionlessWobblyDatalog/main.sh"
--'  4  12  ~/MotionlessWobblyDatalog/main.sh
-|4,39,4,12,1655636469,"~/MotionlessWobblyDatalog/main.sh"
--'  4  12  ~/MotionlessWobblyDatalog/main.sh
-|4,39,4,12,1655636469,"~/MotionlessWobblyDatalog/main.sh"
--'  4  12  ~/MotionlessWobblyDatalog/main.sh
-|4,39,4,12,1655636469,"~/MotionlessWobblyDatalog/main.sh"
--'  4  12  ~/MotionlessWobblyDatalog/main.sh
-|4,39,4,12,1655636469,"~/MotionlessWobblyDatalog/main.sh"
--'  4  12  ~/MotionlessWobblyDatalog/main.sh
-|4,39,4,12,1655636469,"~/MotionlessWobblyDatalog/main.sh"
--'  4  12  ~/MotionlessWobblyDatalog/main.sh
-|4,39,4,12,1655636469,"~/MotionlessWobblyDatalog/main.sh"
--'  4  12  ~/MotionlessWobblyDatalog/main.sh
-|4,39,4,12,1655636469,"~/MotionlessWobblyDatalog/main.sh"
--'  4  12  ~/MotionlessWobblyDatalog/main.sh
-|4,39,4,12,1655636469,"~/MotionlessWobblyDatalog/main.sh"
--'  4  12  ~/MotionlessWobblyDatalog/main.sh
-|4,39,4,12,1655636469,"~/MotionlessWobblyDatalog/main.sh"
--'  1  0  ~/MotionlessWobblyDatalog/main.sh
-|4,39,1,0,1655636458,"~/MotionlessWobblyDatalog/main.sh"
--'  1  0  ~/MotionlessWobblyDatalog/main.sh
-|4,39,1,0,1655636458,"~/MotionlessWobblyDatalog/main.sh"
--'  1  0  ~/MotionlessWobblyDatalog/main.sh
-|4,39,1,0,1655636458,"~/MotionlessWobblyDatalog/main.sh"
--'  1  0  ~/MotionlessWobblyDatalog/main.sh
-|4,39,1,0,1655636458,"~/MotionlessWobblyDatalog/main.sh"
--'  1  0  ~/MotionlessWobblyDatalog/main.sh
-|4,39,1,0,1655636458,"~/MotionlessWobblyDatalog/main.sh"
--'  1  0  ~/MotionlessWobblyDatalog/main.sh
-|4,39,1,0,1655636458,"~/MotionlessWobblyDatalog/main.sh"
--'  1  0  ~/MotionlessWobblyDatalog/main.sh
-|4,39,1,0,1655636458,"~/MotionlessWobblyDatalog/main.sh"
--'  1  0  ~/MotionlessWobblyDatalog/main.sh
-|4,39,1,0,1655636458,"~/MotionlessWobblyDatalog/main.sh"
--'  1  0  ~/MotionlessWobblyDatalog/main.sh
-|4,39,1,0,1655636458,"~/MotionlessWobblyDatalog/main.sh"
--'  1  0  ~/MotionlessWobblyDatalog/main.sh
-|4,39,1,0,1655636458,"~/MotionlessWobblyDatalog/main.sh"
--'  1  0  ~/MotionlessWobblyDatalog/main.sh
-|4,39,1,0,1655636458,"~/MotionlessWobblyDatalog/main.sh"
--'  1  0  ~/MotionlessWobblyDatalog/main.sh
-|4,39,1,0,1655636458,"~/MotionlessWobblyDatalog/main.sh"
--'  1  0  ~/MotionlessWobblyDatalog/main.sh
-|4,39,1,0,1655636458,"~/MotionlessWobblyDatalog/main.sh"
--'  1  0  ~/MotionlessWobblyDatalog/main.sh
-|4,39,1,0,1655636458,"~/MotionlessWobblyDatalog/main.sh"
--'  1  0  ~/MotionlessWobblyDatalog/main.sh
-|4,39,1,0,1655636458,"~/MotionlessWobblyDatalog/main.sh"
--'  1  0  ~/MotionlessWobblyDatalog/main.sh
-|4,39,1,0,1655636458,"~/MotionlessWobblyDatalog/main.sh"
--'  132  35  ~/MotionlessWobblyDatalog/dotfiles/.bashrc
-|4,39,132,35,1655636270,"~/MotionlessWobblyDatalog/dotfiles/.bashrc"
--'  132  35  ~/MotionlessWobblyDatalog/dotfiles/.bashrc
-|4,39,132,35,1655636270,"~/MotionlessWobblyDatalog/dotfiles/.bashrc"
--'  132  35  ~/MotionlessWobblyDatalog/dotfiles/.bashrc
-|4,39,132,35,1655636270,"~/MotionlessWobblyDatalog/dotfiles/.bashrc"
--'  132  35  ~/MotionlessWobblyDatalog/dotfiles/.bashrc
-|4,39,132,35,1655636270,"~/MotionlessWobblyDatalog/dotfiles/.bashrc"
--'  132  35  ~/MotionlessWobblyDatalog/dotfiles/.bashrc
-|4,39,132,35,1655636270,"~/MotionlessWobblyDatalog/dotfiles/.bashrc"
--'  132  35  ~/MotionlessWobblyDatalog/dotfiles/.bashrc
-|4,39,132,35,1655636270,"~/MotionlessWobblyDatalog/dotfiles/.bashrc"
--'  132  35  ~/MotionlessWobblyDatalog/dotfiles/.bashrc
-|4,39,132,35,1655636270,"~/MotionlessWobblyDatalog/dotfiles/.bashrc"
--'  132  35  ~/MotionlessWobblyDatalog/dotfiles/.bashrc
-|4,39,132,35,1655636270,"~/MotionlessWobblyDatalog/dotfiles/.bashrc"
--'  132  35  ~/MotionlessWobblyDatalog/dotfiles/.bashrc
-|4,39,132,35,1655636270,"~/MotionlessWobblyDatalog/dotfiles/.bashrc"
--'  132  35  ~/MotionlessWobblyDatalog/dotfiles/.bashrc
-|4,39,132,35,1655636270,"~/MotionlessWobblyDatalog/dotfiles/.bashrc"
--'  132  35  ~/MotionlessWobblyDatalog/dotfiles/.bashrc
-|4,39,132,35,1655636270,"~/MotionlessWobblyDatalog/dotfiles/.bashrc"
--'  132  35  ~/MotionlessWobblyDatalog/dotfiles/.bashrc
-|4,39,132,35,1655636270,"~/MotionlessWobblyDatalog/dotfiles/.bashrc"
--'  132  35  ~/MotionlessWobblyDatalog/dotfiles/.bashrc
-|4,39,132,35,1655636270,"~/MotionlessWobblyDatalog/dotfiles/.bashrc"
--'  132  35  ~/MotionlessWobblyDatalog/dotfiles/.bashrc
-|4,39,132,35,1655636270,"~/MotionlessWobblyDatalog/dotfiles/.bashrc"
--'  132  35  ~/MotionlessWobblyDatalog/dotfiles/.bashrc
-|4,39,132,35,1655636270,"~/MotionlessWobblyDatalog/dotfiles/.bashrc"
--'  132  35  ~/MotionlessWobblyDatalog/dotfiles/.bashrc
-|4,39,132,35,1655636270,"~/MotionlessWobblyDatalog/dotfiles/.bashrc"
--'  132  35  ~/MotionlessWobblyDatalog/dotfiles/.bashrc
-|4,39,132,35,1655636270,"~/MotionlessWobblyDatalog/dotfiles/.bashrc"
--'  132  35  ~/MotionlessWobblyDatalog/dotfiles/.bashrc
-|4,39,132,35,1655636270,"~/MotionlessWobblyDatalog/dotfiles/.bashrc"
--'  132  35  ~/MotionlessWobblyDatalog/dotfiles/.bashrc
-|4,39,132,35,1655636270,"~/MotionlessWobblyDatalog/dotfiles/.bashrc"
--'  132  35  ~/MotionlessWobblyDatalog/dotfiles/.bashrc
-|4,39,132,35,1655636270,"~/MotionlessWobblyDatalog/dotfiles/.bashrc"
--'  132  35  ~/MotionlessWobblyDatalog/dotfiles/.bashrc
-|4,39,132,35,1655636270,"~/MotionlessWobblyDatalog/dotfiles/.bashrc"
--'  132  35  ~/MotionlessWobblyDatalog/dotfiles/.bashrc
-|4,39,132,35,1655636270,"~/MotionlessWobblyDatalog/dotfiles/.bashrc"
--'  132  35  ~/MotionlessWobblyDatalog/dotfiles/.bashrc
-|4,39,132,35,1655636270,"~/MotionlessWobblyDatalog/dotfiles/.bashrc"
--'  132  35  ~/MotionlessWobblyDatalog/dotfiles/.bashrc
-|4,39,132,35,1655636270,"~/MotionlessWobblyDatalog/dotfiles/.bashrc"
--'  132  35  ~/MotionlessWobblyDatalog/dotfiles/.bashrc
-|4,39,132,35,1655636270,"~/MotionlessWobblyDatalog/dotfiles/.bashrc"
--'  132  35  ~/MotionlessWobblyDatalog/dotfiles/.bashrc
-|4,39,132,35,1655636270,"~/MotionlessWobblyDatalog/dotfiles/.bashrc"
--'  132  35  ~/MotionlessWobblyDatalog/dotfiles/.bashrc
-|4,39,132,35,1655636270,"~/MotionlessWobblyDatalog/dotfiles/.bashrc"
--'  132  35  ~/MotionlessWobblyDatalog/dotfiles/.bashrc
-|4,39,132,35,1655636270,"~/MotionlessWobblyDatalog/dotfiles/.bashrc"
--'  132  35  ~/MotionlessWobblyDatalog/dotfiles/.bashrc
-|4,39,132,35,1655636270,"~/MotionlessWobblyDatalog/dotfiles/.bashrc"
--'  132  35  ~/MotionlessWobblyDatalog/dotfiles/.bashrc
-|4,39,132,35,1655636270,"~/MotionlessWobblyDatalog/dotfiles/.bashrc"
--'  132  35  ~/MotionlessWobblyDatalog/dotfiles/.bashrc
-|4,39,132,35,1655636270,"~/MotionlessWobblyDatalog/dotfiles/.bashrc"
--'  132  35  ~/MotionlessWobblyDatalog/dotfiles/.bashrc
-|4,39,132,35,1655636270,"~/MotionlessWobblyDatalog/dotfiles/.bashrc"
--'  1  0  ~/MotionlessWobblyDatalog/dotfiles/.bashrc
-|4,39,1,0,1655636249,"~/MotionlessWobblyDatalog/dotfiles/.bashrc"
--'  1  0  ~/MotionlessWobblyDatalog/dotfiles/.bashrc
-|4,39,1,0,1655636249,"~/MotionlessWobblyDatalog/dotfiles/.bashrc"
--'  1  0  ~/MotionlessWobblyDatalog/dotfiles/.bashrc
-|4,39,1,0,1655636249,"~/MotionlessWobblyDatalog/dotfiles/.bashrc"
--'  1  0  ~/MotionlessWobblyDatalog/dotfiles/.bashrc
-|4,39,1,0,1655636249,"~/MotionlessWobblyDatalog/dotfiles/.bashrc"
--'  1  0  ~/MotionlessWobblyDatalog/dotfiles/.bashrc
-|4,39,1,0,1655636249,"~/MotionlessWobblyDatalog/dotfiles/.bashrc"
--'  1  0  ~/MotionlessWobblyDatalog/dotfiles/.bashrc
-|4,39,1,0,1655636249,"~/MotionlessWobblyDatalog/dotfiles/.bashrc"
--'  1  0  ~/MotionlessWobblyDatalog/dotfiles/.bashrc
-|4,39,1,0,1655636249,"~/MotionlessWobblyDatalog/dotfiles/.bashrc"
--'  1  0  ~/MotionlessWobblyDatalog/dotfiles/.bashrc
-|4,39,1,0,1655636249,"~/MotionlessWobblyDatalog/dotfiles/.bashrc"
+-'  12  8  ~/learn4haskellghreporeplit-devenvironmentbash/dotfiles/.tmux.conf
+|4,39,12,8,1656755320,"~/learn4haskellghreporeplit-devenvironmentbash/dotfiles/.tmux.conf"
+-'  11  14  ~/learn4haskellghreporeplit-devenvironmentbash/dotfiles/.tmux.conf
+|4,39,11,14,1656755315,"~/learn4haskellghreporeplit-devenvironmentbash/dotfiles/.tmux.conf"
+-'  14  8  ~/learn4haskellghreporeplit-devenvironmentbash/dotfiles/.tmux.conf
+|4,39,14,8,1656755315,"~/learn4haskellghreporeplit-devenvironmentbash/dotfiles/.tmux.conf"
+-'  13  8  ~/learn4haskellghreporeplit-devenvironmentbash/dotfiles/.tmux.conf
+|4,39,13,8,1656755314,"~/learn4haskellghreporeplit-devenvironmentbash/dotfiles/.tmux.conf"
+-'  1  0  ~/learn4haskellghreporeplit-devenvironmentbash/dotfiles/.tmux.conf
+|4,39,1,0,1656755288,"~/learn4haskellghreporeplit-devenvironmentbash/dotfiles/.tmux.conf"
+-'  217  35  ~/learn4haskellghreporeplit-devenvironmentbash/learn4haskell/src/Chapter1.hs
+|4,39,217,35,1656755264,"~/learn4haskellghreporeplit-devenvironmentbash/learn4haskell/src/Chapter1.hs"
+-'  217  35  ~/learn4haskellghreporeplit-devenvironmentbash/learn4haskell/src/Chapter1.hs
+|4,39,217,35,1656755264,"~/learn4haskellghreporeplit-devenvironmentbash/learn4haskell/src/Chapter1.hs"
+-'  60  0  ~/learn4haskellghreporeplit-devenvironmentbash/dotfiles/.tmux.conf
+|4,39,60,0,1656755208,"~/learn4haskellghreporeplit-devenvironmentbash/dotfiles/.tmux.conf"
+-'  60  0  ~/learn4haskellghreporeplit-devenvironmentbash/dotfiles/.tmux.conf
+|4,39,60,0,1656755208,"~/learn4haskellghreporeplit-devenvironmentbash/dotfiles/.tmux.conf"
+-'  61  0  ~/learn4haskellghreporeplit-devenvironmentbash/dotfiles/.tmux.conf
+|4,39,61,0,1656755196,"~/learn4haskellghreporeplit-devenvironmentbash/dotfiles/.tmux.conf"
+-'  61  0  ~/learn4haskellghreporeplit-devenvironmentbash/dotfiles/.tmux.conf
+|4,39,61,0,1656755196,"~/learn4haskellghreporeplit-devenvironmentbash/dotfiles/.tmux.conf"
+-'  79  0  ~/learn4haskellghreporeplit-devenvironmentbash/dotfiles/.tmux.conf
+|4,39,79,0,1656754690,"~/learn4haskellghreporeplit-devenvironmentbash/dotfiles/.tmux.conf"
+-'  79  0  ~/learn4haskellghreporeplit-devenvironmentbash/dotfiles/.tmux.conf
+|4,39,79,0,1656754690,"~/learn4haskellghreporeplit-devenvironmentbash/dotfiles/.tmux.conf"
+-'  85  0  ~/learn4haskellghreporeplit-devenvironmentbash/dotfiles/.tmux.conf
+|4,39,85,0,1656754582,"~/learn4haskellghreporeplit-devenvironmentbash/dotfiles/.tmux.conf"
+-'  85  0  ~/learn4haskellghreporeplit-devenvironmentbash/dotfiles/.tmux.conf
+|4,39,85,0,1656754582,"~/learn4haskellghreporeplit-devenvironmentbash/dotfiles/.tmux.conf"
+-'  1  0  ~/learn4haskellghreporeplit-devenvironmentbash/dotfiles/.tmux.conf
+|4,39,1,0,1656754568,"~/learn4haskellghreporeplit-devenvironmentbash/dotfiles/.tmux.conf"
+-'  1  0  ~/learn4haskellghreporeplit-devenvironmentbash/learn4haskell/src/Chapter1.hs
+|4,39,1,0,1656754097,"~/learn4haskellghreporeplit-devenvironmentbash/learn4haskell/src/Chapter1.hs"
+-'  1  0  ~/learn4haskellghreporeplit-devenvironmentbash/learn4haskell/src/Chapter1.hs
+|4,39,1,0,1656754097,"~/learn4haskellghreporeplit-devenvironmentbash/learn4haskell/src/Chapter1.hs"
+-'  112  0  ~/learn4haskellghreporeplit-devenvironmentbash/learn4haskell/src/Chapter1.hs
+|4,39,112,0,1656754076,"~/learn4haskellghreporeplit-devenvironmentbash/learn4haskell/src/Chapter1.hs"
+-'  112  0  ~/learn4haskellghreporeplit-devenvironmentbash/learn4haskell/src/Chapter1.hs
+|4,39,112,0,1656754076,"~/learn4haskellghreporeplit-devenvironmentbash/learn4haskell/src/Chapter1.hs"
+-'  112  0  ~/learn4haskellghreporeplit-devenvironmentbash/learn4haskell/src/Chapter1.hs
+|4,39,112,0,1656754076,"~/learn4haskellghreporeplit-devenvironmentbash/learn4haskell/src/Chapter1.hs"
+-'  112  0  ~/learn4haskellghreporeplit-devenvironmentbash/learn4haskell/src/Chapter1.hs
+|4,39,112,0,1656754076,"~/learn4haskellghreporeplit-devenvironmentbash/learn4haskell/src/Chapter1.hs"
+-'  112  0  ~/learn4haskellghreporeplit-devenvironmentbash/learn4haskell/src/Chapter1.hs
+|4,39,112,0,1656754076,"~/learn4haskellghreporeplit-devenvironmentbash/learn4haskell/src/Chapter1.hs"
+-'  112  0  ~/learn4haskellghreporeplit-devenvironmentbash/learn4haskell/src/Chapter1.hs
+|4,39,112,0,1656754076,"~/learn4haskellghreporeplit-devenvironmentbash/learn4haskell/src/Chapter1.hs"
+-'  112  0  ~/learn4haskellghreporeplit-devenvironmentbash/learn4haskell/src/Chapter1.hs
+|4,39,112,0,1656754076,"~/learn4haskellghreporeplit-devenvironmentbash/learn4haskell/src/Chapter1.hs"
+-'  112  0  ~/learn4haskellghreporeplit-devenvironmentbash/learn4haskell/src/Chapter1.hs
+|4,39,112,0,1656754076,"~/learn4haskellghreporeplit-devenvironmentbash/learn4haskell/src/Chapter1.hs"
+-'  112  0  ~/learn4haskellghreporeplit-devenvironmentbash/learn4haskell/src/Chapter1.hs
+|4,39,112,0,1656754076,"~/learn4haskellghreporeplit-devenvironmentbash/learn4haskell/src/Chapter1.hs"
+-'  112  0  ~/learn4haskellghreporeplit-devenvironmentbash/learn4haskell/src/Chapter1.hs
+|4,39,112,0,1656754076,"~/learn4haskellghreporeplit-devenvironmentbash/learn4haskell/src/Chapter1.hs"
+-'  1  0  ~/learn4haskellghreporeplit-devenvironmentbash/learn4haskell/src/Chapter1.hs
+|4,39,1,0,1656753742,"~/learn4haskellghreporeplit-devenvironmentbash/learn4haskell/src/Chapter1.hs"
+-'  1  0  ~/learn4haskellghreporeplit-devenvironmentbash/learn4haskell/src/Chapter1.hs
+|4,39,1,0,1656753742,"~/learn4haskellghreporeplit-devenvironmentbash/learn4haskell/src/Chapter1.hs"
+-'  1  0  ~/learn4haskellghreporeplit-devenvironmentbash/learn4haskell/src/Chapter1.hs
+|4,39,1,0,1656753742,"~/learn4haskellghreporeplit-devenvironmentbash/learn4haskell/src/Chapter1.hs"
+-'  1  0  ~/learn4haskellghreporeplit-devenvironmentbash/learn4haskell/src/Chapter1.hs
+|4,39,1,0,1656753742,"~/learn4haskellghreporeplit-devenvironmentbash/learn4haskell/src/Chapter1.hs"
+-'  1  0  ~/learn4haskellghreporeplit-devenvironmentbash/learn4haskell/src/Chapter1.hs
+|4,39,1,0,1656753742,"~/learn4haskellghreporeplit-devenvironmentbash/learn4haskell/src/Chapter1.hs"
+-'  1  0  ~/learn4haskellghreporeplit-devenvironmentbash/learn4haskell/src/Chapter1.hs
+|4,39,1,0,1656753742,"~/learn4haskellghreporeplit-devenvironmentbash/learn4haskell/src/Chapter1.hs"
+-'  1  0  ~/learn4haskellghreporeplit-devenvironmentbash/learn4haskell/src/Chapter1.hs
+|4,39,1,0,1656753742,"~/learn4haskellghreporeplit-devenvironmentbash/learn4haskell/src/Chapter1.hs"
+-'  1  0  ~/learn4haskellghreporeplit-devenvironmentbash/learn4haskell/src/Chapter1.hs
+|4,39,1,0,1656753742,"~/learn4haskellghreporeplit-devenvironmentbash/learn4haskell/src/Chapter1.hs"
+-'  134  0  ~/learn4haskellghreporeplit-devenvironmentbash/dotfiles/.tmux.conf
+|4,39,134,0,1656753330,"~/learn4haskellghreporeplit-devenvironmentbash/dotfiles/.tmux.conf"
+-'  134  0  ~/learn4haskellghreporeplit-devenvironmentbash/dotfiles/.tmux.conf
+|4,39,134,0,1656753330,"~/learn4haskellghreporeplit-devenvironmentbash/dotfiles/.tmux.conf"
+-'  134  0  ~/learn4haskellghreporeplit-devenvironmentbash/dotfiles/.tmux.conf
+|4,39,134,0,1656753330,"~/learn4haskellghreporeplit-devenvironmentbash/dotfiles/.tmux.conf"
+-'  134  0  ~/learn4haskellghreporeplit-devenvironmentbash/dotfiles/.tmux.conf
+|4,39,134,0,1656753330,"~/learn4haskellghreporeplit-devenvironmentbash/dotfiles/.tmux.conf"
+-'  134  0  ~/learn4haskellghreporeplit-devenvironmentbash/dotfiles/.tmux.conf
+|4,39,134,0,1656753330,"~/learn4haskellghreporeplit-devenvironmentbash/dotfiles/.tmux.conf"
+-'  134  0  ~/learn4haskellghreporeplit-devenvironmentbash/dotfiles/.tmux.conf
+|4,39,134,0,1656753330,"~/learn4haskellghreporeplit-devenvironmentbash/dotfiles/.tmux.conf"
+-'  113  0  ~/learn4haskellghreporeplit-devenvironmentbash/dotfiles/.tmux.conf
+|4,39,113,0,1656753293,"~/learn4haskellghreporeplit-devenvironmentbash/dotfiles/.tmux.conf"
+-'  113  0  ~/learn4haskellghreporeplit-devenvironmentbash/dotfiles/.tmux.conf
+|4,39,113,0,1656753293,"~/learn4haskellghreporeplit-devenvironmentbash/dotfiles/.tmux.conf"
+-'  113  0  ~/learn4haskellghreporeplit-devenvironmentbash/dotfiles/.tmux.conf
+|4,39,113,0,1656753293,"~/learn4haskellghreporeplit-devenvironmentbash/dotfiles/.tmux.conf"
+-'  113  0  ~/learn4haskellghreporeplit-devenvironmentbash/dotfiles/.tmux.conf
+|4,39,113,0,1656753293,"~/learn4haskellghreporeplit-devenvironmentbash/dotfiles/.tmux.conf"
+-'  113  0  ~/learn4haskellghreporeplit-devenvironmentbash/dotfiles/.tmux.conf
+|4,39,113,0,1656753293,"~/learn4haskellghreporeplit-devenvironmentbash/dotfiles/.tmux.conf"
+-'  113  0  ~/learn4haskellghreporeplit-devenvironmentbash/dotfiles/.tmux.conf
+|4,39,113,0,1656753293,"~/learn4haskellghreporeplit-devenvironmentbash/dotfiles/.tmux.conf"
+-'  107  0  ~/learn4haskellghreporeplit-devenvironmentbash/dotfiles/.tmux.conf
+|4,39,107,0,1656753288,"~/learn4haskellghreporeplit-devenvironmentbash/dotfiles/.tmux.conf"
+-'  107  0  ~/learn4haskellghreporeplit-devenvironmentbash/dotfiles/.tmux.conf
+|4,39,107,0,1656753288,"~/learn4haskellghreporeplit-devenvironmentbash/dotfiles/.tmux.conf"
+-'  107  0  ~/learn4haskellghreporeplit-devenvironmentbash/dotfiles/.tmux.conf
+|4,39,107,0,1656753288,"~/learn4haskellghreporeplit-devenvironmentbash/dotfiles/.tmux.conf"
+-'  107  0  ~/learn4haskellghreporeplit-devenvironmentbash/dotfiles/.tmux.conf
+|4,39,107,0,1656753288,"~/learn4haskellghreporeplit-devenvironmentbash/dotfiles/.tmux.conf"
+-'  107  0  ~/learn4haskellghreporeplit-devenvironmentbash/dotfiles/.tmux.conf
+|4,39,107,0,1656753288,"~/learn4haskellghreporeplit-devenvironmentbash/dotfiles/.tmux.conf"
+-'  107  0  ~/learn4haskellghreporeplit-devenvironmentbash/dotfiles/.tmux.conf
+|4,39,107,0,1656753288,"~/learn4haskellghreporeplit-devenvironmentbash/dotfiles/.tmux.conf"
+-'  99  0  ~/learn4haskellghreporeplit-devenvironmentbash/dotfiles/.tmux.conf
+|4,39,99,0,1656753273,"~/learn4haskellghreporeplit-devenvironmentbash/dotfiles/.tmux.conf"
+-'  99  0  ~/learn4haskellghreporeplit-devenvironmentbash/dotfiles/.tmux.conf
+|4,39,99,0,1656753273,"~/learn4haskellghreporeplit-devenvironmentbash/dotfiles/.tmux.conf"
+-'  99  0  ~/learn4haskellghreporeplit-devenvironmentbash/dotfiles/.tmux.conf
+|4,39,99,0,1656753273,"~/learn4haskellghreporeplit-devenvironmentbash/dotfiles/.tmux.conf"
+-'  99  0  ~/learn4haskellghreporeplit-devenvironmentbash/dotfiles/.tmux.conf
+|4,39,99,0,1656753273,"~/learn4haskellghreporeplit-devenvironmentbash/dotfiles/.tmux.conf"
+-'  99  0  ~/learn4haskellghreporeplit-devenvironmentbash/dotfiles/.tmux.conf
+|4,39,99,0,1656753273,"~/learn4haskellghreporeplit-devenvironmentbash/dotfiles/.tmux.conf"
+-'  99  0  ~/learn4haskellghreporeplit-devenvironmentbash/dotfiles/.tmux.conf
+|4,39,99,0,1656753273,"~/learn4haskellghreporeplit-devenvironmentbash/dotfiles/.tmux.conf"
+-'  74  0  ~/learn4haskellghreporeplit-devenvironmentbash/dotfiles/.tmux.conf
+|4,39,74,0,1656753267,"~/learn4haskellghreporeplit-devenvironmentbash/dotfiles/.tmux.conf"
+-'  74  0  ~/learn4haskellghreporeplit-devenvironmentbash/dotfiles/.tmux.conf
+|4,39,74,0,1656753267,"~/learn4haskellghreporeplit-devenvironmentbash/dotfiles/.tmux.conf"
+-'  74  0  ~/learn4haskellghreporeplit-devenvironmentbash/dotfiles/.tmux.conf
+|4,39,74,0,1656753267,"~/learn4haskellghreporeplit-devenvironmentbash/dotfiles/.tmux.conf"
+-'  74  0  ~/learn4haskellghreporeplit-devenvironmentbash/dotfiles/.tmux.conf
+|4,39,74,0,1656753267,"~/learn4haskellghreporeplit-devenvironmentbash/dotfiles/.tmux.conf"
+-'  74  0  ~/learn4haskellghreporeplit-devenvironmentbash/dotfiles/.tmux.conf
+|4,39,74,0,1656753267,"~/learn4haskellghreporeplit-devenvironmentbash/dotfiles/.tmux.conf"
+-'  74  0  ~/learn4haskellghreporeplit-devenvironmentbash/dotfiles/.tmux.conf
+|4,39,74,0,1656753267,"~/learn4haskellghreporeplit-devenvironmentbash/dotfiles/.tmux.conf"
+-'  63  0  ~/learn4haskellghreporeplit-devenvironmentbash/dotfiles/.tmux.conf
+|4,39,63,0,1656753252,"~/learn4haskellghreporeplit-devenvironmentbash/dotfiles/.tmux.conf"
+-'  63  0  ~/learn4haskellghreporeplit-devenvironmentbash/dotfiles/.tmux.conf
+|4,39,63,0,1656753252,"~/learn4haskellghreporeplit-devenvironmentbash/dotfiles/.tmux.conf"
+-'  63  0  ~/learn4haskellghreporeplit-devenvironmentbash/dotfiles/.tmux.conf
+|4,39,63,0,1656753252,"~/learn4haskellghreporeplit-devenvironmentbash/dotfiles/.tmux.conf"
+-'  63  0  ~/learn4haskellghreporeplit-devenvironmentbash/dotfiles/.tmux.conf
+|4,39,63,0,1656753252,"~/learn4haskellghreporeplit-devenvironmentbash/dotfiles/.tmux.conf"
+-'  63  0  ~/learn4haskellghreporeplit-devenvironmentbash/dotfiles/.tmux.conf
+|4,39,63,0,1656753252,"~/learn4haskellghreporeplit-devenvironmentbash/dotfiles/.tmux.conf"
+-'  63  0  ~/learn4haskellghreporeplit-devenvironmentbash/dotfiles/.tmux.conf
+|4,39,63,0,1656753252,"~/learn4haskellghreporeplit-devenvironmentbash/dotfiles/.tmux.conf"
+-'  1  0  ~/learn4haskellghreporeplit-devenvironmentbash/dotfiles/.tmux.conf
+|4,39,1,0,1656753235,"~/learn4haskellghreporeplit-devenvironmentbash/dotfiles/.tmux.conf"
+-'  1  0  ~/learn4haskellghreporeplit-devenvironmentbash/dotfiles/.tmux.conf
+|4,39,1,0,1656753235,"~/learn4haskellghreporeplit-devenvironmentbash/dotfiles/.tmux.conf"
+-'  1  0  ~/learn4haskellghreporeplit-devenvironmentbash/dotfiles/.tmux.conf
+|4,39,1,0,1656753235,"~/learn4haskellghreporeplit-devenvironmentbash/dotfiles/.tmux.conf"
+-'  1  0  ~/learn4haskellghreporeplit-devenvironmentbash/dotfiles/.tmux.conf
+|4,39,1,0,1656753235,"~/learn4haskellghreporeplit-devenvironmentbash/dotfiles/.tmux.conf"
+-'  51  0  ~/learn4haskellghreporeplit-devenvironmentbash/dotfiles/.tmux.conf
+|4,39,51,0,1656753232,"~/learn4haskellghreporeplit-devenvironmentbash/dotfiles/.tmux.conf"
+-'  51  0  ~/learn4haskellghreporeplit-devenvironmentbash/dotfiles/.tmux.conf
+|4,39,51,0,1656753232,"~/learn4haskellghreporeplit-devenvironmentbash/dotfiles/.tmux.conf"
+-'  51  0  ~/learn4haskellghreporeplit-devenvironmentbash/dotfiles/.tmux.conf
+|4,39,51,0,1656753232,"~/learn4haskellghreporeplit-devenvironmentbash/dotfiles/.tmux.conf"
+-'  51  0  ~/learn4haskellghreporeplit-devenvironmentbash/dotfiles/.tmux.conf
+|4,39,51,0,1656753232,"~/learn4haskellghreporeplit-devenvironmentbash/dotfiles/.tmux.conf"
+-'  51  0  ~/learn4haskellghreporeplit-devenvironmentbash/dotfiles/.tmux.conf
+|4,39,51,0,1656753232,"~/learn4haskellghreporeplit-devenvironmentbash/dotfiles/.tmux.conf"
+-'  51  0  ~/learn4haskellghreporeplit-devenvironmentbash/dotfiles/.tmux.conf
+|4,39,51,0,1656753232,"~/learn4haskellghreporeplit-devenvironmentbash/dotfiles/.tmux.conf"
+-'  39  0  ~/learn4haskellghreporeplit-devenvironmentbash/dotfiles/.tmux.conf
+|4,39,39,0,1656753225,"~/learn4haskellghreporeplit-devenvironmentbash/dotfiles/.tmux.conf"
+-'  39  0  ~/learn4haskellghreporeplit-devenvironmentbash/dotfiles/.tmux.conf
+|4,39,39,0,1656753225,"~/learn4haskellghreporeplit-devenvironmentbash/dotfiles/.tmux.conf"
+-'  39  0  ~/learn4haskellghreporeplit-devenvironmentbash/dotfiles/.tmux.conf
+|4,39,39,0,1656753225,"~/learn4haskellghreporeplit-devenvironmentbash/dotfiles/.tmux.conf"
+-'  39  0  ~/learn4haskellghreporeplit-devenvironmentbash/dotfiles/.tmux.conf
+|4,39,39,0,1656753225,"~/learn4haskellghreporeplit-devenvironmentbash/dotfiles/.tmux.conf"
+-'  39  0  ~/learn4haskellghreporeplit-devenvironmentbash/dotfiles/.tmux.conf
+|4,39,39,0,1656753225,"~/learn4haskellghreporeplit-devenvironmentbash/dotfiles/.tmux.conf"
+-'  39  0  ~/learn4haskellghreporeplit-devenvironmentbash/dotfiles/.tmux.conf
+|4,39,39,0,1656753225,"~/learn4haskellghreporeplit-devenvironmentbash/dotfiles/.tmux.conf"
+-'  31  0  ~/learn4haskellghreporeplit-devenvironmentbash/dotfiles/.tmux.conf
+|4,39,31,0,1656753208,"~/learn4haskellghreporeplit-devenvironmentbash/dotfiles/.tmux.conf"
+-'  31  0  ~/learn4haskellghreporeplit-devenvironmentbash/dotfiles/.tmux.conf
+|4,39,31,0,1656753208,"~/learn4haskellghreporeplit-devenvironmentbash/dotfiles/.tmux.conf"
+-'  31  0  ~/learn4haskellghreporeplit-devenvironmentbash/dotfiles/.tmux.conf
+|4,39,31,0,1656753208,"~/learn4haskellghreporeplit-devenvironmentbash/dotfiles/.tmux.conf"
+-'  31  0  ~/learn4haskellghreporeplit-devenvironmentbash/dotfiles/.tmux.conf
+|4,39,31,0,1656753208,"~/learn4haskellghreporeplit-devenvironmentbash/dotfiles/.tmux.conf"
+-'  31  0  ~/learn4haskellghreporeplit-devenvironmentbash/dotfiles/.tmux.conf
+|4,39,31,0,1656753208,"~/learn4haskellghreporeplit-devenvironmentbash/dotfiles/.tmux.conf"
+-'  31  0  ~/learn4haskellghreporeplit-devenvironmentbash/dotfiles/.tmux.conf
+|4,39,31,0,1656753208,"~/learn4haskellghreporeplit-devenvironmentbash/dotfiles/.tmux.conf"
+-'  22  0  ~/learn4haskellghreporeplit-devenvironmentbash/dotfiles/.tmux.conf
+|4,39,22,0,1656753190,"~/learn4haskellghreporeplit-devenvironmentbash/dotfiles/.tmux.conf"
+-'  22  0  ~/learn4haskellghreporeplit-devenvironmentbash/dotfiles/.tmux.conf
+|4,39,22,0,1656753190,"~/learn4haskellghreporeplit-devenvironmentbash/dotfiles/.tmux.conf"
+-'  22  0  ~/learn4haskellghreporeplit-devenvironmentbash/dotfiles/.tmux.conf
+|4,39,22,0,1656753190,"~/learn4haskellghreporeplit-devenvironmentbash/dotfiles/.tmux.conf"
+-'  22  0  ~/learn4haskellghreporeplit-devenvironmentbash/dotfiles/.tmux.conf
+|4,39,22,0,1656753190,"~/learn4haskellghreporeplit-devenvironmentbash/dotfiles/.tmux.conf"
+-'  22  0  ~/learn4haskellghreporeplit-devenvironmentbash/dotfiles/.tmux.conf
+|4,39,22,0,1656753190,"~/learn4haskellghreporeplit-devenvironmentbash/dotfiles/.tmux.conf"
+-'  22  0  ~/learn4haskellghreporeplit-devenvironmentbash/dotfiles/.tmux.conf
+|4,39,22,0,1656753190,"~/learn4haskellghreporeplit-devenvironmentbash/dotfiles/.tmux.conf"
 
 # History of marks within files (newest to oldest):
+
+> ~/learn4haskellghreporeplit-devenvironmentbash/dotfiles/.tmux.conf
+	*	1656755315	0
+	"	12	8
+	^	11	1
+	.	12	0
+	+	61	0
+	+	12	0
+
+> ~/learn4haskellghreporeplit-devenvironmentbash/learn4haskell/src/Chapter1.hs
+	*	1656755262	0
+	"	217	35
+	^	219	0
+	.	218	2
+	+	218	2
+
+> ~/learn4haskellghreporeplit-devenvironmentbash/restore
+	*	1656752423	0
+	"	10	34
+	^	10	35
+	.	10	34
+	+	10	34
+
+> ~/learn4haskellghreporeplit-devenvironmentbash/dotfiles/.bashrc
+	*	1656752362	0
+	"	134	68
+	^	134	69
+	.	134	68
+	+	134	68
+
+> ~/learn4haskellghreporeplit-devenvironmentbash/.gitignore
+	*	1656751483	0
+	"	3	0
+	^	3	1
+	.	3	0
+	+	3	0
 
 > ~/learn4haskellghreporeplit-devenvironmentbash/README.md
 	*	1656751238	0
