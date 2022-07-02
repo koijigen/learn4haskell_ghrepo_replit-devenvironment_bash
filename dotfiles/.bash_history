@@ -50,9 +50,7 @@ git clone https://github.com/koijigen/learn4haskell.git
 #1655788641
 #1655788770
 #1655788822
-cabal update
 #1655788931
-make test-chapter1
 #1655789315
 git
 #1655789338
@@ -91,14 +89,89 @@ git restore
 #1655809873
 history
 #1655809880
-clear
 #1655809963
 vim ~/.bashrc
 #1656750088
-. restore
 #1656750098
-cd learn4haskell/
 #1656750100
-ls -a
 #1656750294
 . restore 
+#1656750649
+#1656750654
+#1656750685
+#1656750720
+doctest
+#1656750732
+#1656750817
+cabal update
+#1656750899
+make test-chapter1
+#1656751116
+#1656751121
+tmux split-window
+#1656751132
+tmux split-window -h
+#1656751138
+#1656751140
+#1656751145
+vim README.md 
+#1656751251
+#1656751333
+#1656751339
+vim .gitignore 
+#1656751858
+#1656751867
+clear
+#1656751880
+cd learn4haskell/
+#1656751884
+#1656751892
+ls src
+#1656752009
+cd src
+#1656752010
+#1656752027
+rm *.sw*
+#1656752036
+rm .*.sw.
+#1656752071
+rm .Chapter1.hs.sw*
+#1656752074
+ls -a
+#1656752098
+ls ../../
+#1656752103
+ls ../../dotfiles/
+#1656752110
+ls -a ../../dotfiles/
+#1656752154
+vim ../../dotfiles/.tmux.conf 
+#1656752197
+#1656752315
+cat ../../restore 
+#1656752349
+vim ../../dotfiles/.bashrc 
+#1656752373
+vim ../../restore 
+#1656752440
+#1656751901
+vim src/Chapter1.hs 
+#1656752446
+exit
+#1656751125
+tmux
+#1656752454
+cd ../
+#1656752458
+#1656752507
+#1656752557
+#1656752591
+#1656752617
+#1656752732
+#1656752744
+#1656752875
+#1656753048
+#1656753110
+vim dotfiles/.tmux.conf 
+#1656753336
+. restore
