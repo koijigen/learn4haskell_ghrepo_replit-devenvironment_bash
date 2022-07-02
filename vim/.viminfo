@@ -17,14 +17,16 @@
 $.bash_history
 
 # Command Line History (newest to oldest):
+:wq
+|2,0,1656751242,,"wq"
+:qhhhh
+|2,0,1656751221,,"qhhhh"
+:w
+|2,0,1656751204,,"w"
 :q
 |2,0,1655780425,,"q"
 :q!
 |2,0,1655636761,,"q!"
-:wq
-|2,0,1655636469,,"wq"
-:w
-|2,0,1655636210,,"w"
 :s/.bashrc/.bash_history/g
 |2,0,1655635770,,"s/.bashrc/.bash_history/g"
 :w restore
@@ -61,9 +63,9 @@ $.bash_history
 # Debug Line History (newest to oldest):
 
 # Registers:
-""0	LINE	0
+"0	LINE	0
 	cp /home/runner/MotionlessWobblyDatalog/dotfiles/.bashrc ~/.bashrc
-|3,1,0,1,1,0,1655635748,"cp /home/runner/MotionlessWobblyDatalog/dotfiles/.bashrc ~/.bashrc"
+|3,0,0,1,1,0,1655635748,"cp /home/runner/MotionlessWobblyDatalog/dotfiles/.bashrc ~/.bashrc"
 "1	LINE	0
 	
 |3,0,1,1,1,0,1655631672,""
@@ -85,41 +87,55 @@ $.bash_history
 "7	LINE	0
 	
 |3,0,7,1,1,0,1655627922,""
-"-	CHAR	0
-	echo "hello"'
-|3,0,36,0,1,0,1655630897,"echo \"hello\"'"
+""-	CHAR	0
+	o
+|3,1,36,0,1,0,1656751231,"o"
 
 # File marks:
-'0  4  0  ~/replit-devenvironmentbash/dotfiles/.vimrc
-|4,48,4,0,1655780425,"~/replit-devenvironmentbash/dotfiles/.vimrc"
-'1  5  0  ~/replit-devenvironmentbash/dotfiles/.vimrc
-|4,49,5,0,1655780416,"~/replit-devenvironmentbash/dotfiles/.vimrc"
+'0  4  37  ~/learn4haskellghreporeplit-devenvironmentbash/README.md
+|4,48,4,37,1656751242,"~/learn4haskellghreporeplit-devenvironmentbash/README.md"
+'1  4  0  ~/replit-devenvironmentbash/dotfiles/.vimrc
+|4,49,4,0,1655780425,"~/replit-devenvironmentbash/dotfiles/.vimrc"
 '2  5  0  ~/replit-devenvironmentbash/dotfiles/.vimrc
 |4,50,5,0,1655780416,"~/replit-devenvironmentbash/dotfiles/.vimrc"
-'3  8  0  ~/.bash_logout
-|4,51,8,0,1655636761,"~/.bash_logout"
-'4  4  12  ~/MotionlessWobblyDatalog/main.sh
-|4,52,4,12,1655636469,"~/MotionlessWobblyDatalog/main.sh"
-'5  132  35  ~/MotionlessWobblyDatalog/dotfiles/.bashrc
-|4,53,132,35,1655636270,"~/MotionlessWobblyDatalog/dotfiles/.bashrc"
-'6  133  0  ~/MotionlessWobblyDatalog/dotfiles/.bashrc
-|4,54,133,0,1655636224,"~/MotionlessWobblyDatalog/dotfiles/.bashrc"
+'3  5  0  ~/replit-devenvironmentbash/dotfiles/.vimrc
+|4,51,5,0,1655780416,"~/replit-devenvironmentbash/dotfiles/.vimrc"
+'4  8  0  ~/.bash_logout
+|4,52,8,0,1655636761,"~/.bash_logout"
+'5  4  12  ~/MotionlessWobblyDatalog/main.sh
+|4,53,4,12,1655636469,"~/MotionlessWobblyDatalog/main.sh"
+'6  132  35  ~/MotionlessWobblyDatalog/dotfiles/.bashrc
+|4,54,132,35,1655636270,"~/MotionlessWobblyDatalog/dotfiles/.bashrc"
 '7  133  0  ~/MotionlessWobblyDatalog/dotfiles/.bashrc
 |4,55,133,0,1655636224,"~/MotionlessWobblyDatalog/dotfiles/.bashrc"
-'8  3  0  ~/MotionlessWobblyDatalog/restore
-|4,56,3,0,1655635775,"~/MotionlessWobblyDatalog/restore"
-'9  1  0  ~/MotionlessWobblyDatalog/README.md
-|4,57,1,0,1655631836,"~/MotionlessWobblyDatalog/README.md"
+'8  133  0  ~/MotionlessWobblyDatalog/dotfiles/.bashrc
+|4,56,133,0,1655636224,"~/MotionlessWobblyDatalog/dotfiles/.bashrc"
+'9  3  0  ~/MotionlessWobblyDatalog/restore
+|4,57,3,0,1655635775,"~/MotionlessWobblyDatalog/restore"
 
 # Jumplist (newest first):
+-'  4  37  ~/learn4haskellghreporeplit-devenvironmentbash/README.md
+|4,39,4,37,1656751242,"~/learn4haskellghreporeplit-devenvironmentbash/README.md"
+-'  1  0  ~/learn4haskellghreporeplit-devenvironmentbash/README.md
+|4,39,1,0,1656751146,"~/learn4haskellghreporeplit-devenvironmentbash/README.md"
 -'  4  0  ~/replit-devenvironmentbash/dotfiles/.vimrc
 |4,39,4,0,1655780425,"~/replit-devenvironmentbash/dotfiles/.vimrc"
+-'  4  0  ~/replit-devenvironmentbash/dotfiles/.vimrc
+|4,39,4,0,1655780425,"~/replit-devenvironmentbash/dotfiles/.vimrc"
+-'  1  0  ~/replit-devenvironmentbash/dotfiles/.vimrc
+|4,39,1,0,1655780421,"~/replit-devenvironmentbash/dotfiles/.vimrc"
 -'  1  0  ~/replit-devenvironmentbash/dotfiles/.vimrc
 |4,39,1,0,1655780421,"~/replit-devenvironmentbash/dotfiles/.vimrc"
 -'  5  0  ~/replit-devenvironmentbash/dotfiles/.vimrc
 |4,39,5,0,1655780416,"~/replit-devenvironmentbash/dotfiles/.vimrc"
 -'  5  0  ~/replit-devenvironmentbash/dotfiles/.vimrc
 |4,39,5,0,1655780416,"~/replit-devenvironmentbash/dotfiles/.vimrc"
+-'  5  0  ~/replit-devenvironmentbash/dotfiles/.vimrc
+|4,39,5,0,1655780416,"~/replit-devenvironmentbash/dotfiles/.vimrc"
+-'  5  0  ~/replit-devenvironmentbash/dotfiles/.vimrc
+|4,39,5,0,1655780416,"~/replit-devenvironmentbash/dotfiles/.vimrc"
+-'  1  0  ~/replit-devenvironmentbash/dotfiles/.vimrc
+|4,39,1,0,1655780412,"~/replit-devenvironmentbash/dotfiles/.vimrc"
 -'  1  0  ~/replit-devenvironmentbash/dotfiles/.vimrc
 |4,39,1,0,1655780412,"~/replit-devenvironmentbash/dotfiles/.vimrc"
 -'  8  0  ~/.bash_logout
@@ -130,6 +146,22 @@ $.bash_history
 |4,39,8,0,1655636761,"~/.bash_logout"
 -'  8  0  ~/.bash_logout
 |4,39,8,0,1655636761,"~/.bash_logout"
+-'  8  0  ~/.bash_logout
+|4,39,8,0,1655636761,"~/.bash_logout"
+-'  8  0  ~/.bash_logout
+|4,39,8,0,1655636761,"~/.bash_logout"
+-'  8  0  ~/.bash_logout
+|4,39,8,0,1655636761,"~/.bash_logout"
+-'  8  0  ~/.bash_logout
+|4,39,8,0,1655636761,"~/.bash_logout"
+-'  1  0  ~/.bash_logout
+|4,39,1,0,1655636698,"~/.bash_logout"
+-'  1  0  ~/.bash_logout
+|4,39,1,0,1655636698,"~/.bash_logout"
+-'  1  0  ~/.bash_logout
+|4,39,1,0,1655636698,"~/.bash_logout"
+-'  1  0  ~/.bash_logout
+|4,39,1,0,1655636698,"~/.bash_logout"
 -'  1  0  ~/.bash_logout
 |4,39,1,0,1655636698,"~/.bash_logout"
 -'  1  0  ~/.bash_logout
@@ -154,6 +186,38 @@ $.bash_history
 |4,39,4,12,1655636469,"~/MotionlessWobblyDatalog/main.sh"
 -'  4  12  ~/MotionlessWobblyDatalog/main.sh
 |4,39,4,12,1655636469,"~/MotionlessWobblyDatalog/main.sh"
+-'  4  12  ~/MotionlessWobblyDatalog/main.sh
+|4,39,4,12,1655636469,"~/MotionlessWobblyDatalog/main.sh"
+-'  4  12  ~/MotionlessWobblyDatalog/main.sh
+|4,39,4,12,1655636469,"~/MotionlessWobblyDatalog/main.sh"
+-'  4  12  ~/MotionlessWobblyDatalog/main.sh
+|4,39,4,12,1655636469,"~/MotionlessWobblyDatalog/main.sh"
+-'  4  12  ~/MotionlessWobblyDatalog/main.sh
+|4,39,4,12,1655636469,"~/MotionlessWobblyDatalog/main.sh"
+-'  4  12  ~/MotionlessWobblyDatalog/main.sh
+|4,39,4,12,1655636469,"~/MotionlessWobblyDatalog/main.sh"
+-'  4  12  ~/MotionlessWobblyDatalog/main.sh
+|4,39,4,12,1655636469,"~/MotionlessWobblyDatalog/main.sh"
+-'  4  12  ~/MotionlessWobblyDatalog/main.sh
+|4,39,4,12,1655636469,"~/MotionlessWobblyDatalog/main.sh"
+-'  4  12  ~/MotionlessWobblyDatalog/main.sh
+|4,39,4,12,1655636469,"~/MotionlessWobblyDatalog/main.sh"
+-'  1  0  ~/MotionlessWobblyDatalog/main.sh
+|4,39,1,0,1655636458,"~/MotionlessWobblyDatalog/main.sh"
+-'  1  0  ~/MotionlessWobblyDatalog/main.sh
+|4,39,1,0,1655636458,"~/MotionlessWobblyDatalog/main.sh"
+-'  1  0  ~/MotionlessWobblyDatalog/main.sh
+|4,39,1,0,1655636458,"~/MotionlessWobblyDatalog/main.sh"
+-'  1  0  ~/MotionlessWobblyDatalog/main.sh
+|4,39,1,0,1655636458,"~/MotionlessWobblyDatalog/main.sh"
+-'  1  0  ~/MotionlessWobblyDatalog/main.sh
+|4,39,1,0,1655636458,"~/MotionlessWobblyDatalog/main.sh"
+-'  1  0  ~/MotionlessWobblyDatalog/main.sh
+|4,39,1,0,1655636458,"~/MotionlessWobblyDatalog/main.sh"
+-'  1  0  ~/MotionlessWobblyDatalog/main.sh
+|4,39,1,0,1655636458,"~/MotionlessWobblyDatalog/main.sh"
+-'  1  0  ~/MotionlessWobblyDatalog/main.sh
+|4,39,1,0,1655636458,"~/MotionlessWobblyDatalog/main.sh"
 -'  1  0  ~/MotionlessWobblyDatalog/main.sh
 |4,39,1,0,1655636458,"~/MotionlessWobblyDatalog/main.sh"
 -'  1  0  ~/MotionlessWobblyDatalog/main.sh
@@ -202,6 +266,38 @@ $.bash_history
 |4,39,132,35,1655636270,"~/MotionlessWobblyDatalog/dotfiles/.bashrc"
 -'  132  35  ~/MotionlessWobblyDatalog/dotfiles/.bashrc
 |4,39,132,35,1655636270,"~/MotionlessWobblyDatalog/dotfiles/.bashrc"
+-'  132  35  ~/MotionlessWobblyDatalog/dotfiles/.bashrc
+|4,39,132,35,1655636270,"~/MotionlessWobblyDatalog/dotfiles/.bashrc"
+-'  132  35  ~/MotionlessWobblyDatalog/dotfiles/.bashrc
+|4,39,132,35,1655636270,"~/MotionlessWobblyDatalog/dotfiles/.bashrc"
+-'  132  35  ~/MotionlessWobblyDatalog/dotfiles/.bashrc
+|4,39,132,35,1655636270,"~/MotionlessWobblyDatalog/dotfiles/.bashrc"
+-'  132  35  ~/MotionlessWobblyDatalog/dotfiles/.bashrc
+|4,39,132,35,1655636270,"~/MotionlessWobblyDatalog/dotfiles/.bashrc"
+-'  132  35  ~/MotionlessWobblyDatalog/dotfiles/.bashrc
+|4,39,132,35,1655636270,"~/MotionlessWobblyDatalog/dotfiles/.bashrc"
+-'  132  35  ~/MotionlessWobblyDatalog/dotfiles/.bashrc
+|4,39,132,35,1655636270,"~/MotionlessWobblyDatalog/dotfiles/.bashrc"
+-'  132  35  ~/MotionlessWobblyDatalog/dotfiles/.bashrc
+|4,39,132,35,1655636270,"~/MotionlessWobblyDatalog/dotfiles/.bashrc"
+-'  132  35  ~/MotionlessWobblyDatalog/dotfiles/.bashrc
+|4,39,132,35,1655636270,"~/MotionlessWobblyDatalog/dotfiles/.bashrc"
+-'  132  35  ~/MotionlessWobblyDatalog/dotfiles/.bashrc
+|4,39,132,35,1655636270,"~/MotionlessWobblyDatalog/dotfiles/.bashrc"
+-'  132  35  ~/MotionlessWobblyDatalog/dotfiles/.bashrc
+|4,39,132,35,1655636270,"~/MotionlessWobblyDatalog/dotfiles/.bashrc"
+-'  132  35  ~/MotionlessWobblyDatalog/dotfiles/.bashrc
+|4,39,132,35,1655636270,"~/MotionlessWobblyDatalog/dotfiles/.bashrc"
+-'  132  35  ~/MotionlessWobblyDatalog/dotfiles/.bashrc
+|4,39,132,35,1655636270,"~/MotionlessWobblyDatalog/dotfiles/.bashrc"
+-'  132  35  ~/MotionlessWobblyDatalog/dotfiles/.bashrc
+|4,39,132,35,1655636270,"~/MotionlessWobblyDatalog/dotfiles/.bashrc"
+-'  132  35  ~/MotionlessWobblyDatalog/dotfiles/.bashrc
+|4,39,132,35,1655636270,"~/MotionlessWobblyDatalog/dotfiles/.bashrc"
+-'  132  35  ~/MotionlessWobblyDatalog/dotfiles/.bashrc
+|4,39,132,35,1655636270,"~/MotionlessWobblyDatalog/dotfiles/.bashrc"
+-'  132  35  ~/MotionlessWobblyDatalog/dotfiles/.bashrc
+|4,39,132,35,1655636270,"~/MotionlessWobblyDatalog/dotfiles/.bashrc"
 -'  1  0  ~/MotionlessWobblyDatalog/dotfiles/.bashrc
 |4,39,1,0,1655636249,"~/MotionlessWobblyDatalog/dotfiles/.bashrc"
 -'  1  0  ~/MotionlessWobblyDatalog/dotfiles/.bashrc
@@ -218,102 +314,15 @@ $.bash_history
 |4,39,1,0,1655636249,"~/MotionlessWobblyDatalog/dotfiles/.bashrc"
 -'  1  0  ~/MotionlessWobblyDatalog/dotfiles/.bashrc
 |4,39,1,0,1655636249,"~/MotionlessWobblyDatalog/dotfiles/.bashrc"
--'  1  0  ~/MotionlessWobblyDatalog/dotfiles/.bashrc
-|4,39,1,0,1655636249,"~/MotionlessWobblyDatalog/dotfiles/.bashrc"
--'  1  0  ~/MotionlessWobblyDatalog/dotfiles/.bashrc
-|4,39,1,0,1655636249,"~/MotionlessWobblyDatalog/dotfiles/.bashrc"
--'  1  0  ~/MotionlessWobblyDatalog/dotfiles/.bashrc
-|4,39,1,0,1655636249,"~/MotionlessWobblyDatalog/dotfiles/.bashrc"
--'  1  0  ~/MotionlessWobblyDatalog/dotfiles/.bashrc
-|4,39,1,0,1655636249,"~/MotionlessWobblyDatalog/dotfiles/.bashrc"
--'  1  0  ~/MotionlessWobblyDatalog/dotfiles/.bashrc
-|4,39,1,0,1655636249,"~/MotionlessWobblyDatalog/dotfiles/.bashrc"
--'  1  0  ~/MotionlessWobblyDatalog/dotfiles/.bashrc
-|4,39,1,0,1655636249,"~/MotionlessWobblyDatalog/dotfiles/.bashrc"
--'  1  0  ~/MotionlessWobblyDatalog/dotfiles/.bashrc
-|4,39,1,0,1655636249,"~/MotionlessWobblyDatalog/dotfiles/.bashrc"
--'  1  0  ~/MotionlessWobblyDatalog/dotfiles/.bashrc
-|4,39,1,0,1655636249,"~/MotionlessWobblyDatalog/dotfiles/.bashrc"
--'  133  0  ~/MotionlessWobblyDatalog/dotfiles/.bashrc
-|4,39,133,0,1655636224,"~/MotionlessWobblyDatalog/dotfiles/.bashrc"
--'  133  0  ~/MotionlessWobblyDatalog/dotfiles/.bashrc
-|4,39,133,0,1655636224,"~/MotionlessWobblyDatalog/dotfiles/.bashrc"
--'  133  0  ~/MotionlessWobblyDatalog/dotfiles/.bashrc
-|4,39,133,0,1655636224,"~/MotionlessWobblyDatalog/dotfiles/.bashrc"
--'  133  0  ~/MotionlessWobblyDatalog/dotfiles/.bashrc
-|4,39,133,0,1655636224,"~/MotionlessWobblyDatalog/dotfiles/.bashrc"
--'  133  0  ~/MotionlessWobblyDatalog/dotfiles/.bashrc
-|4,39,133,0,1655636224,"~/MotionlessWobblyDatalog/dotfiles/.bashrc"
--'  133  0  ~/MotionlessWobblyDatalog/dotfiles/.bashrc
-|4,39,133,0,1655636224,"~/MotionlessWobblyDatalog/dotfiles/.bashrc"
--'  133  0  ~/MotionlessWobblyDatalog/dotfiles/.bashrc
-|4,39,133,0,1655636224,"~/MotionlessWobblyDatalog/dotfiles/.bashrc"
--'  133  0  ~/MotionlessWobblyDatalog/dotfiles/.bashrc
-|4,39,133,0,1655636224,"~/MotionlessWobblyDatalog/dotfiles/.bashrc"
--'  133  0  ~/MotionlessWobblyDatalog/dotfiles/.bashrc
-|4,39,133,0,1655636224,"~/MotionlessWobblyDatalog/dotfiles/.bashrc"
--'  133  0  ~/MotionlessWobblyDatalog/dotfiles/.bashrc
-|4,39,133,0,1655636224,"~/MotionlessWobblyDatalog/dotfiles/.bashrc"
--'  133  0  ~/MotionlessWobblyDatalog/dotfiles/.bashrc
-|4,39,133,0,1655636224,"~/MotionlessWobblyDatalog/dotfiles/.bashrc"
--'  133  0  ~/MotionlessWobblyDatalog/dotfiles/.bashrc
-|4,39,133,0,1655636224,"~/MotionlessWobblyDatalog/dotfiles/.bashrc"
--'  133  0  ~/MotionlessWobblyDatalog/dotfiles/.bashrc
-|4,39,133,0,1655636224,"~/MotionlessWobblyDatalog/dotfiles/.bashrc"
--'  133  0  ~/MotionlessWobblyDatalog/dotfiles/.bashrc
-|4,39,133,0,1655636224,"~/MotionlessWobblyDatalog/dotfiles/.bashrc"
--'  133  0  ~/MotionlessWobblyDatalog/dotfiles/.bashrc
-|4,39,133,0,1655636224,"~/MotionlessWobblyDatalog/dotfiles/.bashrc"
--'  133  0  ~/MotionlessWobblyDatalog/dotfiles/.bashrc
-|4,39,133,0,1655636224,"~/MotionlessWobblyDatalog/dotfiles/.bashrc"
--'  133  0  ~/MotionlessWobblyDatalog/dotfiles/.bashrc
-|4,39,133,0,1655636224,"~/MotionlessWobblyDatalog/dotfiles/.bashrc"
--'  133  0  ~/MotionlessWobblyDatalog/dotfiles/.bashrc
-|4,39,133,0,1655636224,"~/MotionlessWobblyDatalog/dotfiles/.bashrc"
--'  133  0  ~/MotionlessWobblyDatalog/dotfiles/.bashrc
-|4,39,133,0,1655636224,"~/MotionlessWobblyDatalog/dotfiles/.bashrc"
--'  133  0  ~/MotionlessWobblyDatalog/dotfiles/.bashrc
-|4,39,133,0,1655636224,"~/MotionlessWobblyDatalog/dotfiles/.bashrc"
--'  133  0  ~/MotionlessWobblyDatalog/dotfiles/.bashrc
-|4,39,133,0,1655636224,"~/MotionlessWobblyDatalog/dotfiles/.bashrc"
--'  133  0  ~/MotionlessWobblyDatalog/dotfiles/.bashrc
-|4,39,133,0,1655636224,"~/MotionlessWobblyDatalog/dotfiles/.bashrc"
--'  133  0  ~/MotionlessWobblyDatalog/dotfiles/.bashrc
-|4,39,133,0,1655636224,"~/MotionlessWobblyDatalog/dotfiles/.bashrc"
--'  133  0  ~/MotionlessWobblyDatalog/dotfiles/.bashrc
-|4,39,133,0,1655636224,"~/MotionlessWobblyDatalog/dotfiles/.bashrc"
--'  133  0  ~/MotionlessWobblyDatalog/dotfiles/.bashrc
-|4,39,133,0,1655636224,"~/MotionlessWobblyDatalog/dotfiles/.bashrc"
--'  133  0  ~/MotionlessWobblyDatalog/dotfiles/.bashrc
-|4,39,133,0,1655636224,"~/MotionlessWobblyDatalog/dotfiles/.bashrc"
--'  133  0  ~/MotionlessWobblyDatalog/dotfiles/.bashrc
-|4,39,133,0,1655636224,"~/MotionlessWobblyDatalog/dotfiles/.bashrc"
--'  133  0  ~/MotionlessWobblyDatalog/dotfiles/.bashrc
-|4,39,133,0,1655636224,"~/MotionlessWobblyDatalog/dotfiles/.bashrc"
--'  133  0  ~/MotionlessWobblyDatalog/dotfiles/.bashrc
-|4,39,133,0,1655636224,"~/MotionlessWobblyDatalog/dotfiles/.bashrc"
--'  133  0  ~/MotionlessWobblyDatalog/dotfiles/.bashrc
-|4,39,133,0,1655636224,"~/MotionlessWobblyDatalog/dotfiles/.bashrc"
--'  133  0  ~/MotionlessWobblyDatalog/dotfiles/.bashrc
-|4,39,133,0,1655636224,"~/MotionlessWobblyDatalog/dotfiles/.bashrc"
--'  133  0  ~/MotionlessWobblyDatalog/dotfiles/.bashrc
-|4,39,133,0,1655636224,"~/MotionlessWobblyDatalog/dotfiles/.bashrc"
--'  1  0  ~/MotionlessWobblyDatalog/dotfiles/.bashrc
-|4,39,1,0,1655636019,"~/MotionlessWobblyDatalog/dotfiles/.bashrc"
--'  1  0  ~/MotionlessWobblyDatalog/dotfiles/.bashrc
-|4,39,1,0,1655636019,"~/MotionlessWobblyDatalog/dotfiles/.bashrc"
--'  1  0  ~/MotionlessWobblyDatalog/dotfiles/.bashrc
-|4,39,1,0,1655636019,"~/MotionlessWobblyDatalog/dotfiles/.bashrc"
--'  1  0  ~/MotionlessWobblyDatalog/dotfiles/.bashrc
-|4,39,1,0,1655636019,"~/MotionlessWobblyDatalog/dotfiles/.bashrc"
--'  1  0  ~/MotionlessWobblyDatalog/dotfiles/.bashrc
-|4,39,1,0,1655636019,"~/MotionlessWobblyDatalog/dotfiles/.bashrc"
--'  1  0  ~/MotionlessWobblyDatalog/dotfiles/.bashrc
-|4,39,1,0,1655636019,"~/MotionlessWobblyDatalog/dotfiles/.bashrc"
--'  1  0  ~/MotionlessWobblyDatalog/dotfiles/.bashrc
-|4,39,1,0,1655636019,"~/MotionlessWobblyDatalog/dotfiles/.bashrc"
 
 # History of marks within files (newest to oldest):
+
+> ~/learn4haskellghreporeplit-devenvironmentbash/README.md
+	*	1656751238	0
+	"	4	37
+	^	4	38
+	.	4	37
+	+	4	37
 
 > ~/replit-devenvironmentbash/dotfiles/.vimrc
 	*	1655780424	0

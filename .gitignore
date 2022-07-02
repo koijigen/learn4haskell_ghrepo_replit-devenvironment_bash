@@ -1,3 +1,3 @@
 develop-memo.md
 *.swp
-.bash_history
+dotfiles/.bash_history
