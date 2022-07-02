@@ -1,3 +1,4 @@
 develop-memo.md
 *.swp
-*.bash_history
+.bash_history
+.viminfo
