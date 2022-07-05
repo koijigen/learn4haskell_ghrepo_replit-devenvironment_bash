@@ -1,5 +1,3 @@
-git add -f dotfiles/.bashrc # because a file .bashrc is in /etc/.gitignore on repl.it, and /etc/* is can not over write(read-only).
-
 replitdir=`basename \`pwd\``
 regex='s/\/replit-devenvironmentbash/\/'$replitdir'/g'
 sed -i -e $regex dotfiles/.bashrc 

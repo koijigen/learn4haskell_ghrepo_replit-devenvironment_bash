@@ -2,3 +2,4 @@ develop-memo.md
 *.swp
 .bash_history
 .viminfo
+!.bashrc
